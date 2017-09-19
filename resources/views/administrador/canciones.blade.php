@@ -87,8 +87,15 @@
               </div>
             </div>
             <div class="form-group  m-b-30">
-              <label for="exampleInputEmail1">Enlace</label>
-              <input type="text" class="form-control input-sm" name="enlace" placeholder="Enlace de la canción">
+              <p class="f-500 c-black m-b-20">Archivo Canción</p>
+              <div class="fileinput fileinput-new" data-provides="fileinput">
+                <span class="btn btn-primary btn-file m-r-10 waves-effect">
+                  <span class="fileinput-new">Seleccionar archivo</span>
+                  <input type="hidden" value="" name="..."><input type="file" name="cancion">
+                </span>
+                <span class="fileinput-filename"></span>
+                <a href="#" class="close fileinput-exists" data-dismiss="fileinput">×</a>
+              </div>
             </div>
             <input type="hidden" id="token" value="{{{ csrf_token() }}}" />
           </div>

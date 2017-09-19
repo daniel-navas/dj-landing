@@ -59,498 +59,7 @@ use App\Servicios;
 
 
 
-    <!-- Page -->
-
-    <div class="har_page" id="har_page">
-
-
-
-        <!-- To Top -->
-
-        <a href="#har_page" class="har_top ti ti-arrow-up har_go"></a>
-
-
-
-
-
-        <!-- Audio Player -->
-
-        <section class="har_player_container_red har_left_player">
-
-            <div class="har_over" data-color="rgb(0, 0, 0)" data-opacity="1" data-blend="multiply"></div>
-
-            <div class="container">
-
-
-
-                <div id="jquery_jplayer_main" class="jp-jplayer"></div>
-
-
-
-                <div id="jp_container_content" class="jp-audio-main" role="application" aria-label="media player">
-
-                    <div class="har_left_player_controls">
-
-                        <div class="har-play">
-
-                            <i class="ti ti-control-play"></i>
-
-                        </div>
-
-                        <div class="har-pause">
-
-                            <i class="ti ti-control-pause"></i>
-
-                        </div>         
-
-                        <button id="playlist-toggle"><i class="ti ti-menu"></i></button>
-
-                    </div>
-
-                    <!-- Error -->
-
-                    <div class="jp-no-solution">
-
-                        <span>Update Required</span>
-
-                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-
-                    </div>
-
-                    <!-- Error End -->
-
-                </div>
-
-            </div>
-
-            <!--Container End -->
-
-
-
-        </section>
-
-        <!-- Audio Player End -->
-
-
-
-
-
-        <!-- Start Of Playlist -->
-
-        <div class="playlist-wrapper har_wht_txt" id="playlist-wrapper">
-
-            <div class="jp-playlist container">
-
-                <div class="about-list clearfix"></div>
-
-
-
-                <!-- Item -->
-
-                <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3" data-artist="Cybersonnet" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                    <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3" title="Mashrous"></audio>
-
-                    <div class="additional-button">
-
-                        <a href="#"><i class="ti ti-headphone"></i></a>
-
-                        <a href="#"><i class="ti ti-apple"></i></a>
-
-                        <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-                    </div>
-
-                    <div class="play-pause-button">
-
-                        <i class="ti ti-control-play"></i>
-
-                    </div>
-
-                    <div class="name-artist">
-
-                        <h3>Cybersonnet - Mashrous </h3>
-
-                    </div>
-
-                    <time class="trak-duration">02:38</time>
-
-                </div>
-
-                <!-- Item End -->
-
-
-
-                <!-- Item -->
-
-                <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" data-artist="Miaow" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                    <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" title="Believe Me"></audio>
-
-                    <div class="additional-button">
-
-                        <a href="#"><i class="ti ti-headphone"></i></a>
-
-                        <a href="#"><i class="ti ti-apple"></i></a>
-
-                        <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-                    </div>
-
-                    <div class="play-pause-button">
-
-                        <i class="ti ti-control-play"></i>
-
-                    </div>
-
-                    <div class="name-artist">
-
-                        <h3> Miaow - Believe Me</h3>      
-
-                    </div>
-
-                    <time class="trak-duration">04:05</time>
-
-                </div>
-
-                <!-- Item End -->
-
-
-
-                <!-- Item -->
-
-                <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3" data-artist="Cro Magnon Man" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                    <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3" title="Be with me"></audio>
-
-                    <div class="additional-button">
-
-                        <a href="#"><i class="ti ti-headphone"></i></a>
-
-                        <a href="#"><i class="ti ti-apple"></i></a>
-
-                        <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-                    </div>
-
-                    <div class="play-pause-button">
-
-                        <i class="ti ti-control-play"></i>
-
-                    </div>
-
-                    <div class="name-artist">
-
-                      <h3> Cro Magnon Man - Be with me </h3>
-
-                  </div>
-
-                  <time class="trak-duration">04:27</time>
-
-              </div>
-
-              <!-- Item end -->
-
-
-
-              <!-- Item -->
-
-              <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3" data-artist="TSP" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3" title="Your Facwe"></audio>
-
-                <div class="additional-button">
-
-                    <a href="#"><i class="ti ti-headphone"></i></a>
-
-                    <a href="#"><i class="ti ti-apple"></i></a>
-
-                    <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-                </div>
-
-                <div class="play-pause-button">           
-
-                    <i class="ti ti-control-play"></i>
-
-                </div>
-
-                <div class="name-artist">       
-
-                    <h3> TSP - Your Facwe </h3>                
-
-                </div>
-
-                <time class="trak-duration">02:56</time>
-
-            </div>
-
-            <!-- Item end -->
-
-
-
-            <!-- Item -->
-
-            <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" data-artist="Miaow" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" title="Believe Me"></audio>
-
-                <div class="additional-button">
-
-                    <a href="#"><i class="ti ti-headphone"></i></a>
-
-                    <a href="#"><i class="ti ti-apple"></i></a>
-
-                    <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-                </div>
-
-                <div class="play-pause-button">
-
-                    <i class="ti ti-control-play"></i>
-
-                </div>
-
-                <div class="name-artist">
-
-                    <h3> Miaow - Believe Me</h3>           
-
-                </div>
-
-                <time class="trak-duration">04:05</time>
-
-            </div>
-
-            <!-- Item End -->     
-
-
-
-            <!-- Item -->
-
-            <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" data-artist="Miaow" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" title="Believe Me"></audio>
-
-                <div class="additional-button">
-
-                    <a href="#"><i class="ti ti-headphone"></i></a>
-
-                    <a href="#"><i class="ti ti-apple"></i></a>
-
-                    <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-                </div>
-
-                <div class="play-pause-button">
-
-                    <i class="ti ti-control-play"></i>
-
-                </div>
-
-                <div class="name-artist">
-
-                    <h3> Miaow - Believe Me</h3>               
-
-                </div>
-
-                <time class="trak-duration">04:05</time>
-
-            </div>
-
-            <!-- Item End -->
-
-
-
-            <!-- Item -->
-
-            <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" data-artist="Miaow" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" title="Believe Me"></audio>
-
-                <div class="additional-button">
-
-                    <a href="#"><i class="ti ti-headphone"></i></a>
-
-                    <a href="#"><i class="ti ti-apple"></i></a>
-
-                    <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-
-
-                </div>
-
-                <div class="play-pause-button">
-
-                    <i class="ti ti-control-play"></i>
-
-                </div>
-
-                <div class="name-artist">
-
-                    <h3> Miaow - Believe Me</h3>               
-
-                </div>
-
-                <time class="trak-duration">
-
-                    04:05
-
-                </time>
-
-            </div>
-
-            <!-- Item End -->
-
-
-
-            <!-- Item -->
-
-            <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" data-artist="Miaow" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" title="Believe Me"></audio>
-
-                <div class="additional-button">
-
-                    <a href="#"><i class="ti ti-headphone"></i></a>
-
-                    <a href="#"><i class="ti ti-apple"></i></a>
-
-                    <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-                </div>
-
-                <div class="play-pause-button">
-
-                    <i class="ti ti-control-play"></i>
-
-                </div>
-
-                <div class="name-artist">
-
-                    <h3> Miaow - Believe Me</h3>  
-
-                </div>
-
-                <time class="trak-duration">04:05</time>
-
-            </div>
-
-            <!-- Item End -->
-
-
-
-            <!-- Item -->
-
-            <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" data-artist="Miaow" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" title="Believe Me"></audio>
-
-                <div class="additional-button">
-
-                    <a href="#"><i class="ti ti-headphone"></i></a>
-
-                    <a href="#"><i class="ti ti-apple"></i></a>
-
-                    <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-                </div>
-
-                <div class="play-pause-button">
-
-                    <i class="ti ti-control-play"></i>
-
-                </div>
-
-                <div class="name-artist">
-
-                    <h3>Miaow - Believe Me</h3>
-
-                </div>
-
-                <time class="trak-duration"> 04:05</time>
-
-            </div>
-
-            <!-- Item End -->
-
-
-
-            <!-- Item -->
-
-            <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" data-artist="Miaow" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" title="Believe Me"></audio>
-
-                <div class="additional-button">
-
-                    <a href="#"><i class="ti ti-headphone"></i></a>
-
-                    <a href="#"><i class="ti ti-apple"></i></a>
-
-                    <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-                </div>
-
-                <div class="play-pause-button">
-
-                    <i class="ti ti-control-play"></i>
-
-                </div>
-
-                <div class="name-artist">
-
-                    <h3> Miaow - Believe Me</h3>       
-
-                </div>
-
-                <time class="trak-duration">04:05</time>
-
-            </div>
-
-            <!-- Item End -->
-
-
-
-            <!-- Item -->
-
-            <div class="trak-item" data-audio="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" data-artist="Miaow" data-thumbnail="http://placehold.it/790x766" data-id="trak-201">
-
-                <audio preload="metadata" src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3" title="Believe Me"></audio>
-
-                <div class="additional-button">
-
-                    <a href="#"><i class="ti ti-headphone"></i></a>
-
-                    <a href="#"><i class="ti ti-apple"></i></a>
-
-                    <a href="#"><i class="ti ti-soundcloud"></i></a>
-
-                </div>
-
-                <div class="play-pause-button">
-
-                    <i class="ti ti-control-play"></i>
-
-                </div>
-
-                <div class="name-artist">
-
-                   <h3> Miaow - Believe Me</h3>       
-
-               </div>
-
-               <time class="trak-duration">04:05</time>
-
-           </div>
-
-           <!-- Item End -->
-
-       </div>
-
-   </div>
-
-   <!-- End Of playlist -->
-
+  
 
 
 
@@ -579,131 +88,46 @@ use App\Servicios;
             <!-- Logo End-->
 
 
-
-
-
-
-
-
-
             <div class="har_top_menu_mobile_link">
 
                 <i class="ti ti-menu"></i>
 
             </div>
-
             <!-- Top Menu -->
-
             <div class="har_top_menu_cont">
-
                 <ul class="har_top_menu">
-
                     <li class="har_parent"><a href="#servicios">Nuestros Servicios</a>
-
-
-
                     </li>
-
-
-
                     <li class="har_parent"><a href="#noticias">Noticias</a>
-
-
-
                     </li>
-
-
-
                     <li class="har_parent"><a href="#next_event">Evento</a>
-
-
-
                     </li>
-
-
-
                     <li class="har_parent"><a href="#canciones">Canciones</a>
-
-
-
                     </li> 
-
-
-
                     <li class="har_parent"><a href="#calendario">Calendario</a>
-
-
-
                     </li>
-
-
-
                     <li class="har_parent"><a href="#galeria">Galeria</a>
-
-
-
                     </li>
-
-
-
                     <li class="har_parent"><a href="#instagram">Instagram</a>
-
-
-
                     </li> 
-
-
-
                     <li class="har_parent"><a href="#contacto">Contáctame</a>
-
-
-
                     </li>                
-
                 </ul>
-
             </div>
-
             <!-- Top Menu End -->
-
-
-
-
-
-
-
         </div>
-
         <!-- container end -->
-
     </nav>
-
-
-
 </header>
-
 <!-- Header End -->
-
-
-
 <!-- Firefly -->
-
 <div class="har_firefly" data-total="60" data-minPixel="1" data-maxPixel="5"></div>
-
-
-
 <!-- Slide Down -->
-
 <a class="har_scroll_down har_go" href="#har_content" data-0="opacity:1; bottom:40px;" data--400-bottom="opacity:0; bottom:80px;">
-
     <b data-0="height:40px" data--400-bottom="height:55px"></b>
-
     Scroll
-
 </a>
-
 <!-- Slider -->
-
 <div class="har_slider_carousel">
 
     <!-- Item -->
@@ -897,16 +321,14 @@ use App\Servicios;
 
 
 
-            <h2>Siguiente Evento</h2>
+            <h2>MixCloud</h2>
 
-            <h3>Post produccion <br>Audio y Video</h3>
 
 
 
             <!-- CountDown -->
 
-            <span class="har_countdown" data-year="2017" data-month="05" data-day="28"></span>
-
+           <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&autoplay=1&feed=%2Fwillyflechas%2F" frameborder="0" ></iframe>
 
 
             <div class="row">
@@ -950,7 +372,7 @@ use App\Servicios;
             <div class="har_team_slider">
                 @foreach($canciones as $index => $cancion)
                 <div class="har_shop_al_item_bl">
-                    <a href="{{$cancion->enlace}}" class="har_shop_al_item">
+                    <a href="{{$cancion->enlace}}" class="har_shop_al_item" target="_blank" download="">
                         <span class="har_shop_item_disk">
                             <span class="har_shop_item_cover har_image_bck" data-image="{{$cancion->imagen}}"></span>
                             <span class="har_shop_item_env"></span>
@@ -968,15 +390,14 @@ use App\Servicios;
     </section>
     <!-- end DESCARGAS -->
     <!-- CALENDARIO -->
-    <section class="har_section har_image_bck" id="calendario">
-        <div class="container text-center">
+    
+    <section class="har_section har_image_bck" style="background: #06588d">
+        <div class="container-fluid har_wht_txt text-center">
+            <div class="row har_new_events">
+        <div class="container text-center" style="padding-bottom: 0px;">
             <h2>Calendario</h2>
             <h3>Disponibilidad y eventos</h3>
         </div>
-    </section>
-    <section class="har_section har_image_bck">
-        <div class="container-fluid har_wht_txt text-center">
-            <div class="row har_new_events">
                 <a href="#" class="har_new_events_item col-md-3">
                     <div class="har_new_events_item_desc har_image_bck" data-color="#06588D">
                         <span>{{Calendario::find(1)->fecha}} </span>
@@ -1259,37 +680,37 @@ use App\Servicios;
             <h2>Redes Sociales</h2>
             <div class="har_icon_boxes row text-centered har_team_slider_bw" style="margin-top: 0px;">
                 <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active" class="noactive" style="">
-                    <a class="col-sm-2" style="padding: 0px;width: 20%;" href="https://vimeo.com/user2512212/" target="_blank">
+                    <a class="col-sm-2" style="width: 20%; padding: 0px 30px" href="https://vimeo.com/user2512212/" target="_blank">
                         <div class="har_news_block text-center" style="transition-delay: 0.1s;">
-                            <span class="har_news_img" style="height: auto;">
+                            <span class="har_news_img">
                                 <img src="/images/willy/vimeo.png" alt="">
                             </span>
                         </div>
                     </a>
-                    <a class="col-sm-2" style="padding: 0px;width: 20%;" href="https://www.instagram.com/willy_flechas/" target="_blank">
+                    <a class="col-sm-2" style="width: 20%; padding: 0px 30px" href="https://www.instagram.com/willy_flechas/" target="_blank">
                         <div class="har_news_block text-center" style="transition-delay: 0.1s;">
-                            <span class="har_news_img" style="height: auto;">
+                            <span class="har_news_img">
                                 <img src="/images/willy/instagram.png" alt="">
                             </span>
                         </div>
                     </a>
-                    <a class="col-sm-2" style="padding: 0px;width: 20%;" href="https://www.facebook.com/djwillyflechas/" target="_blank">
+                    <a class="col-sm-2" style="width: 20%; padding: 0px 30px" href="https://www.facebook.com/djwillyflechas/" target="_blank">
                         <div class="har_news_block text-center" style="transition-delay: 0.1s;">
-                            <span class="har_news_img" style="height: auto;">
+                            <span class="har_news_img">
                                 <img src="/images/willy/facebook.png" alt="">
                             </span>
                         </div>
                     </a>
-                    <a class="col-sm-2" style="padding: 0px;width: 20%;" href="https://twitter.com/willyflechas/" target="_blank">
+                    <a class="col-sm-2" style="width: 20%; padding: 0px 30px" href="https://twitter.com/willyflechas/" target="_blank">
                         <div class="har_news_block text-center" style="transition-delay: 0.1s;">
-                            <span class="har_news_img" style="height: auto;">
+                            <span class="har_news_img">
                                 <img src="/images/willy/twitter.png" alt="">
                             </span>
                         </div>
                     </a>
-                    <a class="col-sm-2" style="padding: 0px;width: 20%;" href="https://www.mixcloud.com/willyflechas/" target="_blank">
+                    <a class="col-sm-2" style="width: 20%; padding: 0px 30px" href="https://www.mixcloud.com/willyflechas/" target="_blank">
                         <div class="har_news_block text-center" style="transition-delay: 0.1s;">
-                            <span class="har_news_img" style="height: auto;">
+                            <span class="har_news_img">
                                 <img src="/images/willy/mixcloud.png" alt="">
                             </span>
                         </div>
@@ -1306,7 +727,7 @@ use App\Servicios;
             <div class="row">
                 <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
                     <div class="col-md-8 col-sm-12 col-md-offset-2 har_form_animation">
-                        <h2>Conctactame</h2>
+                        <h2>Contáctame</h2>
                         <h3>Deja tú mensaje, y pronto me pondré en contácto contigo.</h3>
                         <form id="har_form" class="har_form">
                             <div class="col-md-6">

@@ -31,7 +31,7 @@ class AdminController extends Controller
         {
             $date = date('mdYhis');
             $nombre2 = $file2->getClientOriginalExtension();
-            \Storage::disk('local')->put($date.'.'.$nombre,  \File::get($file2));
+            \Storage::disk('local')->put($date.'.'.$nombre2,  \File::get($file2));
 
             Variables::where("referencia","banner2")
             ->update(['valor' => "/images/willy/".$date.'.'.$nombre2]);

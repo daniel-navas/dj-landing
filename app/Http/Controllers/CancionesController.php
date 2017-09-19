@@ -16,12 +16,19 @@ public function canciones(){
 
 public function agregarCanciones(Request $request){
 	$nombre=$request->nombre;
-    $enlace=$request->enlace;
+    $enlace=$request->cancion;
 	$imagen = $request->file('imagen');
 
 	$cancion = new Canciones();
 	$cancion->nombre = $nombre; 
-	$cancion->enlace = $enlace; 
+	if($enlace)
+        {
+            $date = date('mdYhis');
+            $filename = $enlace->getClientOriginalExtension();
+            \Storage::disk('local')->put($date.'.'.$filename,  \File::get($enlace));
+
+            $cancion->enlace = "/images/willy/".$date.'.'.$filename;
+        }
 	if($imagen)
         {
             $date = date('mdYhis');
