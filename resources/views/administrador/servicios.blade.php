@@ -1,144 +1,117 @@
 @extends('layouts.app')
 
 @section('content')
- 
-<form name="FORMA" id="FORMA" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
-  {{csrf_field()}}
-<div class="container">
 
-{{-- ********************************************LISTAR USUARIOS*************************************** --}}
-<div class="row">
-	
-    <div class="card">
-        <div class="card-header">
-            <h2>NUESTROS SERVICIOS</h2>
-        </div>
-         
-  <div class="table-responsive">
-    <div class="card">
-        <div class="table-responsive">
-          <p class="f-500 c-black m-b-20">Texto Servicios</p>
-        </div>
-        <div class="form-group">
-          <div class="fg-line">
-              <input type="text" class="form-control" placeholder="Texto Servicios" name="textServicios">
-          </div>
-        </div>
-    </div>
- 				<p class="f-500 c-black m-b-20">Servicio 1</p>
+<?php use App\Servicios; ?>
 
-                <div class="fileinput fileinput-new" data-provides="fileinput">
-                    <div class="fileinput-preview thumbnail" data-trigger="fileinput"></div>
-                    <div>
-                        <span class="btn btn-info btn-file">
-                            <span class="fileinput-new">Select image</span>
-                            <span class="fileinput-exists">Change</span>
-                            <input type="file" name="imgServ1" id="imgServ1">
-                        </span>
-                        <a href="#" class="btn btn-danger fileinput-exists"
-                           data-dismiss="fileinput">Remove</a>
-                    </div>
-                </div>
-          <br/>
-          <br/>
-          <br/>
-        <div class="col-sm-4">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
-              <div class="fg-line">
-                  <input type="text" class="form-control" placeholder="Nombre 1" name="txtNombreServ1">
-              </div>
-          </div>
-        </div>
-        
-   		 	</div>
-        </div>
-        <br>
-        <div class="card">
-
-        <p class="f-500 c-black m-b-20">Servicio 2</p>
-
-                <div class="fileinput fileinput-new" data-provides="fileinput">
-                    <div class="fileinput-preview thumbnail" data-trigger="fileinput"></div>
-                    <div>
-                        <span class="btn btn-info btn-file">
-                            <span class="fileinput-new">Select image</span>
-                            <span class="fileinput-exists">Change</span>
-                            <input type="file" name="imgServ2">
-                        </span>
-                        <a href="#" class="btn btn-danger fileinput-exists"
-                           data-dismiss="fileinput">Remove</a>
-                    </div>
-                </div>
-          <br/>
-          <br/>
-          <br/>
-        <div class="col-sm-4">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
-              <div class="fg-line">
-                  <input type="text" class="form-control" placeholder="Nombre 1" name="txtNombreServ2">
-              </div>
-          </div>
-        </div>
-       
-        </div>
-<br><br>
-         <div class="card">
-
-        <p class="f-500 c-black m-b-20">Servicio 3</p>
-
-                <div class="fileinput fileinput-new" data-provides="fileinput">
-                    <div class="fileinput-preview thumbnail" data-trigger="fileinput"></div>
-                    <div>
-                        <span class="btn btn-info btn-file">
-                            <span class="fileinput-new">Select image</span>
-                            <span class="fileinput-exists">Change</span>
-                            <input type="file" name="imgServ3">
-                        </span>
-                        <a href="#" class="btn btn-danger fileinput-exists"
-                           data-dismiss="fileinput">Remove</a>
-                    </div>
-                </div>
-          <br/>
-          <br/>
-          <br/>
-        <div class="col-sm-4">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
-              <div class="fg-line">
-                  <input type="text" class="form-control" placeholder="Nombre 1" name="txtNombreServ3">
-              </div>
-          </div>
-        </div>
-        
-        </div>
-
-  </div>
-
-
-
-
+<div class="block-header">
+    <h2>Servicios</h2>
 </div>
-<br/>
-
-
-</div>
-    {{-- ********************************************FIN LISTAR USUARIOS*************************************** --}}
-<div class="row">
-    <div class="column">
-        <button id="btnEnviar" type="submit">Enviar</button>
+<div class="card">
+    <div class="card-header">
+        <h2>Servicio 1</h2>
     </div>
-  </div>
-</form>
+    <div class="card-body card-padding">
+        <form role="form" action="/servicios" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+            {{csrf_field()}}
+            <input type="hidden" name="servicio" value="1">
+            <div class="form-group fg-line">
+                <label>Titulo</label>
+                <input type="text" required="" name="tituloServicio" class="form-control input-sm" placeholder="Titulo del evento" value="{{Servicios::find(1)->titulo}}">
+            </div>
+            <div class="form-group fg-line">
+                <label>Enlace</label>
+                <input type="text" required="" name="enlaceServicio" class="form-control input-sm" placeholder="Enlace del evento" value="{{Servicios::find(1)->enlace}}">
+            </div>
+            <p class="f-500 c-black m-b-20">Image Preview</p>
+            <div class="fileinput fileinput-new" data-provides="fileinput">
+                <div class="fileinput-preview thumbnail" data-trigger="fileinput">
+                    <img src="{{Servicios::find(1)->imagen}}">
+                </div>
+                <div>
+                    <span class="btn btn-info btn-file waves-effect">
+                        <span class="fileinput-new">Seleccionar imagen</span>
+                        <input type="file" name="imgServicio">
+                    </span>
+                    <a href="#" class="btn btn-danger fileinput-exists waves-effect" data-dismiss="fileinput">Quitar</a>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-sm m-t-10 waves-effect">Guardar</button>
+        </form>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <h2>Servicio 2</h2>
+    </div>
+    <div class="card-body card-padding">
+        <form role="form" action="/servicios" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+            {{csrf_field()}}
+            <input type="hidden" name="servicio" value="2">
+            <div class="form-group fg-line">
+                <label>Titulo</label>
+                <input type="text" required="" name="tituloServicio" class="form-control input-sm" placeholder="Titulo del evento" value="{{Servicios::find(2)->titulo}}">
+            </div>
+            <div class="form-group fg-line">
+                <label>Enlace</label>
+                <input type="text" required="" name="enlaceServicio" class="form-control input-sm" placeholder="Enlace del evento" value="{{Servicios::find(2)->enlace}}">
+            </div>
+            <p class="f-500 c-black m-b-20">Image Preview</p>
+            <div class="fileinput fileinput-new" data-provides="fileinput">
+                <div class="fileinput-preview thumbnail" data-trigger="fileinput">
+                    <img src="{{Servicios::find(2)->imagen}}">
+                </div>
+                <div>
+                    <span class="btn btn-info btn-file waves-effect">
+                        <span class="fileinput-new">Seleccionar imagen</span>
+                        <input type="file" name="imgServicio">
+                    </span>
+                    <a href="#" class="btn btn-danger fileinput-exists waves-effect" data-dismiss="fileinput">Quitar</a>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-sm m-t-10 waves-effect">Guardar</button>
+        </form>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <h2>Servicio 3</h2>
+    </div>
+    <div class="card-body card-padding">
+        <form role="form" action="/servicios" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+            {{csrf_field()}}
+            <input type="hidden" name="servicio" value="3">
+            <div class="form-group fg-line">
+                <label>Titulo</label>
+                <input type="text" required="" name="tituloServicio" class="form-control input-sm" placeholder="Titulo del evento" value="{{Servicios::find(3)->titulo}}">
+            </div>
+            <div class="form-group fg-line">
+                <label>Enlace</label>
+                <input type="text" required="" name="enlaceServicio" class="form-control input-sm" placeholder="Enlace del evento" value="{{Servicios::find(3)->enlace}}">
+            </div>
+            <p class="f-500 c-black m-b-20">Image Preview</p>
+            <div class="fileinput fileinput-new" data-provides="fileinput">
+                <div class="fileinput-preview thumbnail" data-trigger="fileinput">
+                    <img src="{{Servicios::find(3)->imagen}}">
+                </div>
+                <div>
+                    <span class="btn btn-info btn-file waves-effect">
+                        <span class="fileinput-new">Seleccionar imagen</span>
+                        <input type="file" name="imgServicio">
+                    </span>
+                    <a href="#" class="btn btn-danger fileinput-exists waves-effect" data-dismiss="fileinput">Quitar</a>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-sm m-t-10 waves-effect">Guardar</button>
+        </form>
+    </div>
+</div>
 
 @stop
-
-
-
 
 @section('scripts')
 	
 @stop
-
-	

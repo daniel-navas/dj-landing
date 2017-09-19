@@ -4,9 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Variables;
-use App\Canciones;
 use App\Galeria;
-use App\Calendario;
 
 class AdminController extends Controller
 {
@@ -20,21 +18,23 @@ class AdminController extends Controller
         $file = $request->file('imagen1');
         $file2 = $request->file('imagen2');
 
-         if($file)
+        if($file)
         {
-            $nombre = $file->getClientOriginalName();
-            \Storage::disk('local')->put($nombre,  \File::get($file)); 
+            $date = date('mdYhis');
+            $nombre = $file->getClientOriginalExtension();
+            \Storage::disk('local')->put($date.'.'.$nombre,  \File::get($file));
 
-               Variables::where("referencia","banner1")
-                        ->update(['valor' => "/images/willy/".$nombre]);
+            Variables::where("referencia","banner1")
+            ->update(['valor' => "/images/willy/".$date.'.'.$nombre]);
         }
         if($file2)
         {
-            $nombre2 = $file2->getClientOriginalName();
-            \Storage::disk('local')->put($nombre2,  \File::get($file2));
+            $date = date('mdYhis');
+            $nombre2 = $file2->getClientOriginalExtension();
+            \Storage::disk('local')->put($date.'.'.$nombre,  \File::get($file2));
 
             Variables::where("referencia","banner2")
-            ->update(['valor' => "/images/willy/".$nombre2]);
+            ->update(['valor' => "/images/willy/".$date.'.'.$nombre2]);
         }
 
         $titulo1=$request->TitPrin1;
@@ -50,75 +50,25 @@ class AdminController extends Controller
             Variables::where("referencia","SubTitBanner1")
             ->update(['valor' => $Subtitulo1]);
         }
-        return view('administrador.bannerPrincipal');
+        $titulo2=$request->TitPrin2;
+        $Subtitulo2=$request->Subtit2;
 
-    }
-
-     public function changeServicios(Request $request)
-    {
-        $file = $request->file('imgServ1');
-        $file2 = $request->file('imgServ2');
-        $file3 = $request->file('imgServ3');
-
-         if($file)
+        if($titulo2)
         {
-            $nombre = $file->getClientOriginalName();
-            \Storage::disk('local')->put($nombre,  \File::get($file)); 
-
-               Variables::where("referencia","imgServ1")
-                        ->update(['valor' => "/images/willy/".$nombre]);
-        }
-
-        if($file2)
-        {
-            $nombre2 = $file2->getClientOriginalName();
-            \Storage::disk('local')->put($nombre2,  \File::get($file2));
-
-            Variables::where("referencia","imgServ2")
-            ->update(['valor' => "/images/willy/".$nombre2]);
-        }
-
-        if($file3)
-        {
-            $nombre3 = $file3->getClientOriginalName();
-            \Storage::disk('local')->put($nombre3,  \File::get($file3));
-
-            Variables::where("referencia","imgServ3")
-            ->update(['valor' => "/images/willy/".$nombre3]);
-        }
-
-        $textServicios=$request->textServicios;
-        $txtNombreServ1=$request->txtNombreServ1;
-        $txtNombreServ2=$request->txtNombreServ2;
-        $txtNombreServ3=$request->txtNombreServ3;
-
-        if($textServicios)
-        {
-            Variables::where("referencia","textServicios")
-            ->update(['valor' => $textServicios]);
+            Variables::where("referencia","TitBanner2")
+            ->update(['valor' => $titulo2]);
         } 
-        if($txtNombreServ1)
+        if($Subtitulo2)
         {
-            Variables::where("referencia","titServ1")
-            ->update(['valor' => $txtNombreServ1]);
+            Variables::where("referencia","SubTitBanner2")
+            ->update(['valor' => $Subtitulo2]);
         }
-        if($txtNombreServ2)
-        {
-            Variables::where("referencia","titServ2")
-            ->update(['valor' => $txtNombreServ2]);
-        }
-        if($txtNombreServ3)
-        {
-            Variables::where("referencia","titServ3")
-            ->update(['valor' => $txtNombreServ3]);
-        }
-        return view('administrador.servicios');
-
-    } 
+        return view('administrador.bannerPrincipal');
+    }
 
     public function changenoticias(Request $request)
     {
-    
+
         $tituloNoticia1=$request->tituloNoticia1;
         $tituloNoticia2=$request->tituloNoticia2;
         $tituloNoticia3=$request->tituloNoticia3;
@@ -181,113 +131,10 @@ class AdminController extends Controller
 
         return view('administrador.noticias');
 
-    }
-
-    public function changeCanciones(Request $request)
-    {
-    
-        $textCanciones=$request->textCanciones;
-        $nombreCancion1=$request->nombreCancion1;
-        $nombreCancion2=$request->nombreCancion2;
-        $nombreCancion3=$request->nombreCancion3;
-
-
-        $file = $request->file('imgCancion1');
-        $file2 = $request->file('imgCancion2');
-        $file3 = $request->file('imgCancion3');
-
-         if($file)
-        {
-            $nombre = $file->getClientOriginalName();
-            \Storage::disk('local')->put($nombre,  \File::get($file));
-
-            Variables::where("referencia","Cancion1")
-            ->update(['valor' => "/images/willy/".$nombre]);
-        }
-
-        if($file2)
-        {
-            $nombre2 = $file2->getClientOriginalName();
-            \Storage::disk('local')->put($nombre2,  \File::get($file2));
-
-            Variables::where("referencia","Cancion2")
-            ->update(['valor' => "/images/willy/".$nombre2]);
-        }
-
-        if($file3)
-        {
-            $nombre3 = $file3->getClientOriginalName();
-            \Storage::disk('local')->put($nombre3,  \File::get($file3));
-
-            Variables::where("referencia","Cancion3")
-            ->update(['valor' => "/images/willy/".$nombre3]);
-        }
-
-        if($textCanciones)
-        {
-            Canciones::where("referencia","TextCanciones")
-            ->update(['valor' => $textCanciones]);
-        }
-
-        if($nombreCancion1)
-        {
-            Canciones::where("referencia","Cancion1")
-            ->update(['valor' => $nombreCancion1]);
-        } 
-        if($nombreCancion2)
-        {
-            Canciones::where("referencia","Cancion2")
-            ->update(['valor' => $nombreCancion2]);
-        }
-        if($nombreCancion3)
-        {
-            Canciones::where("referencia","Cancion3")
-            ->update(['valor' => $nombreCancion3]);
-        }
-
-        return view('administrador.canciones');
-
-    }
-
-    public function changeCalendario(Request $request)
-    {
-    
-        $fechaCalendario=$request->fechaCalendario;
-        $nombreCalendario=$request->nombreCalendario;
-        $ubicacionCalendario=$request->ubicacionCalendario;
-        $imgCalendario = $request->file('imgCalendario');
-
-        $calendario = Calendario::find($request->calendario);
-        $calendario->fecha = $fechaCalendario;
-        $calendario->nombre = $nombreCalendario;
-        $calendario->ubicacion = $ubicacionCalendario;
-
-        if($imgCalendario)
-        {
-            $date = date('mdYhis');
-            $nombre = $imgCalendario->getClientOriginalExtension();
-            \Storage::disk('local')->put($date.'.'.$nombre,  \File::get($imgCalendario));
-
-            $calendario->imagen = "/images/willy/".$date.'.'.$nombre;
-        }
-        $calendario->save();
-
-        
-
-
-        //////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-        return view('administrador.calendario');
-
-    }
+    }    
 
     public function changeGaleria(Request $request)
     {
-    
-       
-
         $file = $request->file('ImgGal1');
         $file2 = $request->file('ImgGal2');
         $file3 = $request->file('ImgGal3');
@@ -295,7 +142,7 @@ class AdminController extends Controller
         $file5 = $request->file('ImgGal5');
         $file6 = $request->file('ImgGal6');
 
-         if($file)
+        if($file)
         {
             $nombre = $file->getClientOriginalName();
             \Storage::disk('local')->put($nombre,  \File::get($file));
@@ -303,7 +150,7 @@ class AdminController extends Controller
             Galeria::where("referencia","foto1")
             ->update(['valor' => "/images/willy/".$nombre]);
 
-             Galeria::where("referencia","FotoGrande1")
+            Galeria::where("referencia","FotoGrande1")
             ->update(['valor' => "/images/willy/".$nombre]);
         }
 
@@ -327,7 +174,7 @@ class AdminController extends Controller
             Galeria::where("referencia","foto3")
             ->update(['valor' => "/images/willy/".$nombre3]);
 
-             Galeria::where("referencia","FotoGrande3")
+            Galeria::where("referencia","FotoGrande3")
             ->update(['valor' => "/images/willy/".$nombre3]);
         }
         if($file4)
@@ -338,7 +185,7 @@ class AdminController extends Controller
             Galeria::where("referencia","foto4")
             ->update(['valor' => "/images/willy/".$nombre4]);
 
-             Galeria::where("referencia","FotoGrande4")
+            Galeria::where("referencia","FotoGrande4")
             ->update(['valor' => "/images/willy/".$nombre4]);
         }
         if($file5)
@@ -349,7 +196,7 @@ class AdminController extends Controller
             Galeria::where("referencia","foto5")
             ->update(['valor' => "/images/willy/".$nombre5]);
 
-             Galeria::where("referencia","FotoGrande5")
+            Galeria::where("referencia","FotoGrande5")
             ->update(['valor' => "/images/willy/".$nombre5]);
         }
         if($file6)
@@ -360,7 +207,7 @@ class AdminController extends Controller
             Galeria::where("referencia","foto6")
             ->update(['valor' => "/images/willy/".$nombre6]);
             
-             Galeria::where("referencia","FotoGrande6")
+            Galeria::where("referencia","FotoGrande6")
             ->update(['valor' => "/images/willy/".$nombre6]);
         }
 
@@ -439,11 +286,6 @@ class AdminController extends Controller
         return view('administrador.bannerPrincipal');
     }
 
-    public function servicios()
-    {
-        return view('administrador.servicios');
-    }
-
     public function noticias()
     {
         return view('administrador.noticias');
@@ -453,12 +295,6 @@ class AdminController extends Controller
     {
         return view('administrador.eventos');
     }
-
-    public function canciones()
-    {
-        return view('administrador.canciones');
-    } 
-
     public function galeria()
     {
         return view('administrador.galeria');

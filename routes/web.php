@@ -11,27 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/admin', function () {
-    return view('administrador.login');
-});
-Route::get('/calendario', function () {
-    return view('administrador.calendario');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
-
+Route::get('/', 'HomeController@index');
 
 Route::get('/banner-principal', 'AdminController@bannerPrincipal');
 Route::post('/banner-principal', 'AdminController@changePrincipal');
 
-Route::get('/servicios', 'AdminController@servicios');
-Route::post('/servicios', 'AdminController@changeServicios');
+Route::get('/servicios', 'ServiciosController@servicios');
+Route::post('/servicios', 'ServiciosController@editarServicios');
 
 Route::get('/noticias', 'AdminController@noticias');
 Route::post('/noticias', 'AdminController@changenoticias');
@@ -39,11 +27,13 @@ Route::post('/noticias', 'AdminController@changenoticias');
 Route::get('/eventos', 'AdminController@eventos');
 Route::post('/eventos', 'AdminController@changeEventos');
 
-Route::get('/canciones', 'AdminController@canciones');
-Route::post('/canciones', 'AdminController@changeCanciones');
+Route::get('/canciones', 'CancionesController@canciones');
+Route::post('/canciones/agregar', 'CancionesController@agregarCanciones');
+Route::post('/canciones/editar', 'CancionesController@editarCanciones');
+Route::get('/canciones/eliminar/{id}', 'CancionesController@eliminarCanciones');
 
-//Route::get('/calendario', 'AdminController@calendario');
-Route::post('/calendario', 'AdminController@changeCalendario');
+Route::get('/calendario', 'CalendarioController@calendario');
+Route::post('/calendario', 'CalendarioController@editarCalendario');
 
 Route::get('/galeria', 'AdminController@galeria');
 Route::post('/galeria', 'AdminController@changeGaleria');
@@ -51,6 +41,6 @@ Route::post('/galeria', 'AdminController@changeGaleria');
 Route::get('/instagram', 'AdminController@instagram');
 Route::post('/instagram', 'AdminController@changeInstagram');
 
-
-
-
+Route::get('/admin', function () {
+    return view('administrador.login');
+});
