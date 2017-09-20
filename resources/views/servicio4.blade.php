@@ -101,7 +101,7 @@ use App\Servicios;
                     </li>
                     <li class="har_parent"><a href="/#noticias">Noticias</a>
                     </li>
-                    <li class="har_parent"><a href="/#next_event">Evento</a>
+                    <li class="har_parent"><a href="/#next_event">Mixcloud</a>
                     </li>
                     <li class="har_parent"><a href="/#canciones">Canciones</a>
                     </li> 
@@ -131,7 +131,10 @@ use App\Servicios;
             <h2 style="font-family:'Montserrat', sans-serif; margin-top: 155px">Show DJ</h2>
 
 
-            <p style="font-size: 16px; margin-top: 30px">Contamos con una gran experiencia en la realización, producción y desarrollo de eventos sociales. Múltiples parejas y quinceañeras a nivel nacional, decidieron contar con nuestros servicios para la realización con gran éxito de su evento, a tal punto que el portal internacional especializado en Bodas Zankyou nos ubica en el top 10 a nivel nacional en la realización de los mismos. Solicita tu cotización ya mismo y reserva tu fecha con tiempo. <br>
+            <p style="font-size: 16px; margin-top: 30px; max-width:70%">Willy Flechas, es un dj de gran reconocimiento nacional, quien cuenta con más de 22 años de experiencia como dj cross-over y productor de mixes y remixes para los más importantes medios de comunicación en el país. <br> 
+Emisoras y medios en la cuales ha trabajado: Tropicana Stereo (Caracol Radio), 40 Principales (Caracol Radio), Oxigeno FM (Caracol Radio), Rumba Stereo (RCN), Candela Stereo (Radiopolis), La Joya, Cristalina Stereo (INRAI), Olímpica Stereo (Organización Olímpica), Fiebre Latina Radio (Malaga España), La Bomba FM (Barcelona España) Play TV (Canal 13), Bravissimo (City TV)
+Listado de Remixes Oficiales: •CD Maxi Mosaicos 2007 (Universal Music), •CD Maxi Mosaicos 2006 (Universal Music), •CD Maxi Mosaicos 2005 (Universal Music), •CD Maxi Mosaicos 2004 (Universal Music), •Remix de Canción Rota – Andres Cepeda (FM Discos), •Remix de Llora el Corazón – Checo Acosta (FM Discos), •Remix de La Tortuga ya Salió – Alfa 8 (Fonocaribe), •Remix de Celia Colombia te Canta – Alfa 8 (Fonocaribe), •CD Merenmix Milenio (JAN Music), •Remix de Vale la Pena - Juan Luis Guerra (Karen Record’s), •Remix de Cinturita de Fuego - Hermanos Rosario (Karen Record’s), •Remix de Suave Bruta - Joe Arroyo (Discos Fuentes), •Remix Lo mejor de Paquito Baron (Yoyo Music), •Medley Lo mejor de Ismael Miranda (Universal Music), •CD Maxi Mosaicos 2002 (Universal Music), •Remix Juanes Mix (Universal Music), •CD Meren Remix (Jan Music), •Remix Raulin Mix (Lideres), •Remix de Morena quiero yo - Sarao (Karen Record’s), •Remix Micaela - Sonora Carruseles (14 Cañonazos Vol. 42) (Discos Fuentes), •CD Maxi Mosaicos 2003 (Universal Music), •Remix El Amor Esta Llamándome - Mayte (EMI Music), •CD Maxi Mosaicos 2006 (Universal Music), •Remix No – Shakira (House Maxter) (Sony Music), •Mix # 1’s Destiny Child’s (Sony Music), •Remix Te Mando Flores – Fonseca (Bachata Mix)
+ <br>
                 <br>
                 <a href="#contacto"><button type="link" href="#contacto">COTIZACION</button></a>
 </p>
@@ -154,7 +157,7 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title1')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle1')}}</span>
+                            
 
                             <span class="har_port_icons">
 
@@ -184,11 +187,10 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title2')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle2')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
 
                                 <a href="{{Galeria::valor('FotoGrande2')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -218,7 +220,7 @@ use App\Servicios;
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                            
 
                                 <a href="{{Galeria::valor('FotoGrande3')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -244,11 +246,11 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title4')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle4')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                                
 
                                 <a href="{{Galeria::valor('FotoGrande4')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -278,11 +280,11 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title5')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle5')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                                
 
                                 <a href="{{Galeria::valor('FotoGrande5')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -308,11 +310,11 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title6')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle6')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                                
 
                                 <a href="{{Galeria::valor('FotoGrande6')}}" class="lightbox"><i class="ti ti-search"></i></a>
 

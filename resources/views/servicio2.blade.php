@@ -101,7 +101,7 @@ use App\Servicios;
                     </li>
                     <li class="har_parent"><a href="/#noticias">Noticias</a>
                     </li>
-                    <li class="har_parent"><a href="/#next_event">Evento</a>
+                    <li class="har_parent"><a href="/#next_event">Mixcloud</a>
                     </li>
                     <li class="har_parent"><a href="/#canciones">Canciones</a>
                     </li> 
@@ -131,14 +131,13 @@ use App\Servicios;
             <h2 style="font-family:'Montserrat', sans-serif; margin-top: 155px">Empresariales</h2>
 
 
-            <p style="font-size: 16px; margin-top: 30px">Contamos con una gran experiencia en la realización, producción y desarrollo de eventos sociales. Múltiples parejas y quinceañeras a nivel nacional, decidieron contar con nuestros servicios para la realización con gran éxito de su evento, a tal punto que el portal internacional especializado en Bodas Zankyou nos ubica en el top 10 a nivel nacional en la realización de los mismos. Solicita tu cotización ya mismo y reserva tu fecha con tiempo. <br>
+            <p style="font-size: 16px; margin-top: 30px">¡Ofrecemos para la temporada empresarial 2017, un formato con menos coreografías y más fiesta!  Dj Willy Flechas estará mezclando en tornamesas y será el encargado de la animación, además estará acompañado de 4 bailarines en escena y efectos especiales; razón por la cual las empresas más importantes del país cuentan con nuestros servicios para la celebración de su fiesta de fin de año. Reserva ya tu fecha. <br>
                 <br>
                 <a href="#contacto"><button type="link" href="#contacto">COTIZACION</button></a>
 </p>
 
             <!-- grid -->
-
-            <div class="har_portfolio grid">
+<div class="har_portfolio grid">
 
 
 
@@ -154,7 +153,7 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title1')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle1')}}</span>
+                            
 
                             <span class="har_port_icons">
 
@@ -184,11 +183,10 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title2')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle2')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
 
                                 <a href="{{Galeria::valor('FotoGrande2')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -218,7 +216,7 @@ use App\Servicios;
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                            
 
                                 <a href="{{Galeria::valor('FotoGrande3')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -244,11 +242,11 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title4')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle4')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                                
 
                                 <a href="{{Galeria::valor('FotoGrande4')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -278,11 +276,11 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title5')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle5')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                                
 
                                 <a href="{{Galeria::valor('FotoGrande5')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -308,11 +306,11 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title6')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle6')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                                
 
                                 <a href="{{Galeria::valor('FotoGrande6')}}" class="lightbox"><i class="ti ti-search"></i></a>
 

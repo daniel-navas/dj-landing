@@ -50,7 +50,7 @@ Route::get('/admin', function () {
 Route::get('/bodas-15-anos',function(){
     return view('servicio1');
 });
-Route::get('/empresariales',function(){
+Route::get('/empresarial',function(){
     return view('servicio2');
 });
 Route::get('/alquiler-sonido-iluminacion',function(){

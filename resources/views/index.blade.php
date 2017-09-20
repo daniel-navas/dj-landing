@@ -87,7 +87,7 @@ use App\Servicios;
 
             <a href="/" class="har_logo" style="margin-left: 0px!important;"><img src="/img/logosintext.png" alt="" style="max-height: 35px;float: left;">
                 <img class="texto-logo" src="/img/texto-blanco.png" style="max-height: 34px" alt="">
-                <!-- <div style="float: left;"><span style="font-family:'Nexa'; text-transform: capitalize; font-weight: 200; font-size: 19px"><strong>Willy</strong>Flechas<br><nr style="font-size: 8px; font-weight: light">EVENTOS Y ESPECTACULOS</nr></span></div> -->
+               
             </a>
 
 
@@ -106,7 +106,7 @@ use App\Servicios;
                     </li>
                     <li class="har_parent"><a href="#noticias">Noticias</a>
                     </li>
-                    <li class="har_parent"><a href="#next_event">Evento</a>
+                    <li class="har_parent"><a href="#next_event">Mixcloud</a>
                     </li>
                     <li class="har_parent"><a href="#canciones">Canciones</a>
                     </li> 
@@ -114,7 +114,7 @@ use App\Servicios;
                     </li>
                     <li class="har_parent"><a href="#galeria">Galeria</a>
                     </li>
-                    <li class="har_parent"><a href="#instagram">Instagram</a>
+                    <li class="har_parent"><a href="#instagram">Redes</a>
                     </li> 
                     <li class="har_parent"><a href="#contacto">Contáctame</a>
                     </li>                
@@ -207,8 +207,9 @@ use App\Servicios;
             <h2>Nuestros Servicios</h2>
             <h3>Tenemos todo lo que necesitas para tu evento!</h3>
             <div class="har_icon_boxes row text-center">
-                <div class="har_team_slider">
+                <div class="">
                     @foreach($servicios as $servicio)
+                    <div class="col-md-4">
                     <a href="{{$servicio->enlace}}">
                         <div class="har_icon_box har_team_box">
                             <div class="har_icon_box_photo">
@@ -217,6 +218,7 @@ use App\Servicios;
                             <h4><b>{{$servicio->titulo}}</b> <br></h4>
                         </div> 
                     </a>
+                    </div>
                     @endforeach
                 </div>
             </div>
@@ -391,6 +393,7 @@ use App\Servicios;
                     <h4>{{$cancion->nombre}}</h4>
                 </div>
                 @endforeach
+
             </div>
         </div>
     </section>
@@ -404,38 +407,17 @@ use App\Servicios;
             <h2>Calendario</h2>
             <h3>Disponibilidad y eventos</h3>
         </div>
-                <a href="#" class="har_new_events_item col-md-3">
+        @foreach(Calendario::all() as $calendario)
+                <a href="" class="har_new_events_item col-md-3">
                     <div class="har_new_events_item_desc har_image_bck" data-color="#06588D">
-                        <span>{{Calendario::find(1)->fecha}} </span>
-                        <h4>{{Calendario::find(1)->nombre}}</h4>
-                        <h5><span class="ti ti-location-pin"></span>{{Calendario::find(1)->ubicacion}}</h5>
+                        <span>{{$calendario->fecha}} </span>
+                        <h4>{{$calendario->nombre}}</h4>
+                        <h5><span class="ti ti-location-pin"></span>{{$calendario->ubicacion}}</h5>
                     </div>
-                    <span class="har_new_events_item_img har_image_bck" data-image="{{Calendario::find(1)->imagen}}"><b>Ver</b></span>
+                    <span class="har_new_events_item_img har_image_bck" data-image="{{$calendario->imagen}}"><b>Ver</b></span>
                 </a>
-                <a href="#" class="har_new_events_item col-md-3">
-                    <div class="har_new_events_item_desc har_image_bck" data-color="#06588D">
-                        <span>{{Calendario::find(2)->fecha}} </span>
-                        <h4>{{Calendario::find(2)->nombre}}</h4>
-                        <h5><span class="ti ti-location-pin"></span>{{Calendario::find(2)->ubicacion}}</h5>
-                    </div>
-                    <span class="har_new_events_item_img har_image_bck" data-image="{{Calendario::find(2)->imagen}}"><b>Ver</b></span>
-                </a>
-                <a href="#" class="har_new_events_item col-md-3">
-                    <div class="har_new_events_item_desc har_image_bck" data-color="#06588D">
-                        <span>{{Calendario::find(3)->fecha}} </span>
-                        <h4>{{Calendario::find(3)->nombre}}</h4>
-                        <h5><span class="ti ti-location-pin"></span>{{Calendario::find(3)->ubicacion}}</h5>
-                    </div>
-                    <span class="har_new_events_item_img har_image_bck" data-image="{{Calendario::find(3)->imagen}}"><b>Ver</b></span>
-                </a>
-                <a href="#" class="har_new_events_item col-md-3">
-                    <div class="har_new_events_item_desc har_image_bck" data-color="#06588D">
-                        <span>{{Calendario::find(4)->fecha}} </span>
-                        <h4>{{Calendario::find(4)->nombre}}</h4>
-                        <h5><span class="ti ti-location-pin"></span>{{Calendario::find(4)->ubicacion}}</h5>
-                    </div>
-                    <span class="har_new_events_item_img har_image_bck" data-image="{{Calendario::find(4)->imagen}}"><b>Ver</b></span>
-                </a>
+        @endforeach
+
             </div>
         </div>
     </section>
@@ -476,7 +458,8 @@ use App\Servicios;
 
             <!-- grid -->
 
-            <div class="har_portfolio grid">
+            
+           <div class="har_portfolio grid">
 
 
 
@@ -492,7 +475,7 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title1')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle1')}}</span>
+                            
 
                             <span class="har_port_icons">
 
@@ -522,11 +505,10 @@ use App\Servicios;
 
                             <span class="har_port_title">{{Galeria::valor('Title2')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle2')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
 
                                 <a href="{{Galeria::valor('FotoGrande2')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -542,11 +524,11 @@ use App\Servicios;
 
                 <!-- item -->
 
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase3')}}">
+                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
 
                     <div class="har_portfolio_item_cont">
 
-                        <img src="{{Galeria::valor('foto3')}}" alt="">
+                        <img src="{{Galeria::valor('foto1')}}" alt="">
 
                         <span class="har_port_titles">
 
@@ -556,7 +538,7 @@ use App\Servicios;
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                            
 
                                 <a href="{{Galeria::valor('FotoGrande3')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -576,17 +558,17 @@ use App\Servicios;
 
                     <div class="har_portfolio_item_cont">
 
-                        <img src="{{Galeria::valor('foto4')}}" alt="">
+                        <img src="{{Galeria::valor('foto2')}}" alt="">
 
                         <span class="har_port_titles">
 
                             <span class="har_port_title">{{Galeria::valor('Title4')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle4')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                                
 
                                 <a href="{{Galeria::valor('FotoGrande4')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -606,21 +588,21 @@ use App\Servicios;
 
                 <!-- item -->
 
-                <div class="col-sm-4 har_portfolio_item grid-item event {{Galeria::valor('clase5')}}">
+                <div class="col-sm-4 har_portfolio_item grid-item event {{Galeria::valor('clase1')}}">
 
                     <div class="har_portfolio_item_cont">
 
-                        <img src="{{Galeria::valor('foto5')}}" alt="">
+                        <img src="{{Galeria::valor('foto2')}}" alt="">
 
                         <span class="har_port_titles">
 
                             <span class="har_port_title">{{Galeria::valor('Title5')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle5')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                                
 
                                 <a href="{{Galeria::valor('FotoGrande5')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -636,21 +618,21 @@ use App\Servicios;
 
                 <!-- item -->
 
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase6')}}">
+                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
 
                     <div class="har_portfolio_item_cont">
 
-                        <img src="{{Galeria::valor('foto6')}}" alt="">
+                        <img src="{{Galeria::valor('foto1')}}" alt="">
 
                         <span class="har_port_titles">
 
                             <span class="har_port_title">{{Galeria::valor('Title6')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle6')}}</span>
+                            
 
                             <span class="har_port_icons">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+                                
 
                                 <a href="{{Galeria::valor('FotoGrande6')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
