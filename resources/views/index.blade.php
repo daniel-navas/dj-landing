@@ -70,6 +70,7 @@ use App\Servicios;
 
 
 
+
     <nav class="har_light_nav har_transp_nav">
 
         <div class="container">
@@ -328,7 +329,7 @@ use App\Servicios;
 
             <!-- CountDown -->
 
-           <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&autoplay=1&feed=%2Fwillyflechas%2F" frameborder="0" ></iframe>
+           <iframe id="mixcloudframe" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&autoplay=1&feed=%2Fwillyflechas%2F" frameborder="0" ></iframe>
 
 
             <div class="row">
@@ -720,71 +721,9 @@ use App\Servicios;
         </div>
     </section>
     <!-- end REDES SOCIALES -->
-    <!-- CONTACTAME -->
-    <section class="har_section har_image_bck har_wht_txt har_fixed" data-image="{{Variables::valor('FondoContacto')}}" data-stellar-background-ratio="0.2" id="contacto">
-        <div class="har_over" data-color="#000" data-opacity="0.6"></div>
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
-                    <div class="col-md-8 col-sm-12 col-md-offset-2 har_form_animation">
-                        <h2>Contáctame</h2>
-                        <h3>Deja tú mensaje, y pronto me pondré en contácto contigo.</h3>
-                        <form id="har_form" class="har_form">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Nombres" name="name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Telefono" name="phone" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="E-mail" name="email" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Asunto" name="subject">
-                            </div>                            
-                            <div class="col-md-12">
-                                <textarea class="form-control" placeholder="Mensaje" name="message"></textarea>
-                                <input type="submit" class="btn" value="Enviar">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</section>
-<!-- end CONTACTAME -->
-<!-- Footer -->
-<footer class="har_image_bck text-center har_wht_txt" data-color="#000">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- Copyrights -->
-                <h2>Willy Flechas</h2>
-                <!-- Social Buttons -->
-                <div class="har_footer_social">
+    @include('layouts.contacto')
+    @include('layouts.footer')
 
-                    <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
-
-                        <a href="#"><i class="ti ti-facebook har_icon_box"></i></a>
-
-                        <a href="#"><i class="ti ti-instagram har_icon_box"></i></a>
-
-                        <a href="#"><i class="ti ti-soundcloud har_icon_box"></i></a>
-
-                        <a href="#"><i class="ti ti-youtube har_icon_box"></i></a>
-
-                        <a href="#"><i class="ti ti-twitter har_icon_box"></i></a>
-
-                        <a href="#"><i class="ti ti-pinterest har_icon_box"></i></a>
-                    </div>
-                </div>
-                <p>© 2017 Willy Flechas Dj / <a href="http://sebastianagreda.com" target="_blank">Sebastian Agreda Desarrollo Web - Movíl</a></p>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Footer End -->
 </div>
 <!-- Page End -->
 
@@ -796,5 +735,6 @@ use App\Servicios;
 <script src="js/jquery.mb.YTPlayer.min.js"></script> 
 <!-- Theme JS -->
 <script src="js/harmony_script.js"></script>
+@include("layouts.mute")
 </body>
 </html>

@@ -44,3 +44,24 @@ Route::post('/instagram', 'AdminController@changeInstagram');
 Route::get('/admin', function () {
     return view('administrador.login');
 });
+
+
+
+Route::get('/bodas-15-anos',function(){
+    return view('servicio1');
+});
+Route::get('/empresariales',function(){
+    return view('servicio2');
+});
+Route::get('/alquiler-sonido-iluminacion',function(){
+    return view('servicio3');
+});
+Route::get('/show-dj',function(){
+    return view('servicio4');
+});
+Route::get('/wf-factory-case',function(){
+    return view('servicio5');
+});
+Route::get('/producer',function(){
+    return view('servicio6');
+});
