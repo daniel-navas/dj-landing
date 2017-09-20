@@ -39,6 +39,11 @@ use App\Servicios;
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+    <style type="text/css">
+        .rsuno{
+            margin-left: -7px;
+        }
+    </style>
 </head>
 
 <body class="har_middle_titles">
@@ -675,45 +680,36 @@ use App\Servicios;
 
     </section>
     <!-- REDES SOCIALES -->
+
     <section class="har_section har_image_bck har_wht_txt" id="testimonials" data-color="#292929" style="background-color: rgb(41, 41, 41);">
-        <div class="text-center">
+        <div class="text-center" style="padding-bottom: 40px">
             <br><br>
             <h2>Redes Sociales</h2>
             <div class="har_icon_boxes row text-centered har_team_slider_bw" style="margin-top: 0px;">
                 <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active" class="noactive" style="">
-                    <a class="col-sm-2" style="width: 20%; padding: 0px 30px" href="https://vimeo.com/user2512212/" target="_blank">
-                        <div class="har_news_block text-center" style="transition-delay: 0.1s;">
-                            <span class="har_news_img">
-                                <img src="/images/willy/vimeo.png" alt="">
-                            </span>
+                    <a class="col-xs-2 col-xs-offset-1 rstres" href="https://vimeo.com/user2512212/" target="_blank">
+                        <div class="har_news_block text-center rsdos" style="transition-delay: 0.1s; background-color: cornflowerblue; ">
+                                <i class="ti ti-vimeo har_icon_box rsuno"></i>
                         </div>
                     </a>
-                    <a class="col-sm-2" style="width: 20%; padding: 0px 30px" href="https://www.instagram.com/willy_flechas/" target="_blank">
-                        <div class="har_news_block text-center" style="transition-delay: 0.1s;">
-                            <span class="har_news_img">
-                                <img src="/images/willy/instagram.png" alt="">
-                            </span>
+                    <a class="col-xs-2 rstres" href="https://www.instagram.com/willy_flechas/" target="_blank">
+                        <div class="har_news_block text-center rsdos" style="transition-delay: 0.1s; background-color: hotpink; ">
+                                <i class="ti ti-instagram har_icon_box rsuno"></i>
                         </div>
                     </a>
-                    <a class="col-sm-2" style="width: 20%; padding: 0px 30px" href="https://www.facebook.com/djwillyflechas/" target="_blank">
-                        <div class="har_news_block text-center" style="transition-delay: 0.1s;">
-                            <span class="har_news_img">
-                                <img src="/images/willy/facebook.png" alt="">
-                            </span>
+                    <a class="col-xs-2 rstres" href="https://www.facebook.com/djwillyflechas/" target="_blank">
+                        <div class="har_news_block text-center rsdos" style="transition-delay: 0.1s; background-color: darkblue; ">
+                                <i class="ti ti-facebook har_icon_box rsuno"></i>
                         </div>
                     </a>
-                    <a class="col-sm-2" style="width: 20%; padding: 0px 30px" href="https://twitter.com/willyflechas/" target="_blank">
-                        <div class="har_news_block text-center" style="transition-delay: 0.1s;">
-                            <span class="har_news_img">
-                                <img src="/images/willy/twitter.png" alt="">
-                            </span>
+                    <a class="col-xs-2 rstres" href="https://twitter.com/willyflechas/" target="_blank">
+                        <div class="har_news_block text-center rsdos" style="transition-delay: 0.1s; background-color: darkturquoise; ">
+                                <i class="ti ti-twitter har_icon_box rsuno"></i>
                         </div>
                     </a>
-                    <a class="col-sm-2" style="width: 20%; padding: 0px 30px" href="https://www.mixcloud.com/willyflechas/" target="_blank">
-                        <div class="har_news_block text-center" style="transition-delay: 0.1s;">
-                            <span class="har_news_img">
-                                <img src="/images/willy/mixcloud.png" alt="">
-                            </span>
+                    <a class="col-xs-2 rstres" href="https://www.mixcloud.com/willyflechas/" target="_blank">
+                        <div class="har_news_block text-center rsdos" style="transition-delay: 0.1s; background-color: gray; ">
+                                <i class="ti ti-soundcloud har_icon_box rsuno"></i>
                         </div>
                     </a>                                       
                 </div>
