@@ -36,14 +36,15 @@ use App\Servicios;
 
     <!-- Google Fonts -->
 
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
     <style type="text/css">
-        .rsuno{
-            margin-left: -7px;
-        }
-    </style>
+    .rsuno{
+        margin-left: -7px;
+    }
+</style>
 </head>
 
 <body class="har_middle_titles">
@@ -64,99 +65,127 @@ use App\Servicios;
 
 
 
-  
 
 
 
 
-   <!-- Header -->
 
-   <header>       
+    <!-- Header -->
 
-
-
-
-    <nav class="har_light_nav har_transp_nav">
-
-        <div class="container">
+    <header>       
 
 
 
-            <!-- Logo -->
+
+        <nav class="har_light_nav har_transp_nav">
+
+            <div class="container">
 
 
-            <a href="/" class="har_logo" style="margin-left: 0px!important;"><img src="/img/logosintext.png" alt="" style="max-height: 35px;float: left;">
-                <img class="texto-logo" src="/img/texto-blanco.png" style="max-height: 34px" alt="">
-               
-            </a>
+
+                <!-- Logo -->
 
 
-            <!-- Logo End-->
+                <a href="/" class="har_logo" style="margin-left: 0px!important;"><img src="/img/logosintext.png" alt="" style="max-height: 35px;float: left;">
+                    <img class="texto-logo" src="/img/texto-blanco.png" style="max-height: 34px" alt="">
+
+                </a>
 
 
-            <div class="har_top_menu_mobile_link">
+                <!-- Logo End-->
 
-                <i class="ti ti-menu"></i>
+
+                <div class="har_top_menu_mobile_link">
+
+                    <i class="ti ti-menu"></i>
+
+                </div>
+                <!-- Top Menu -->
+                <div class="har_top_menu_cont">
+                    <ul class="har_top_menu">
+                        <li class="har_parent"><a href="#servicios">Nuestros Servicios</a>
+                        </li>
+                        <li class="har_parent"><a href="#noticias">Noticias</a>
+                        </li>
+                        <li class="har_parent"><a href="#next_event">Mixcloud</a>
+                        </li>
+                        <li class="har_parent"><a href="#canciones">Canciones</a>
+                        </li> 
+                        <li class="har_parent"><a href="#calendario">Calendario</a>
+                        </li>
+                        <li class="har_parent"><a href="#galeria">Galeria</a>
+                        </li>
+                        <li class="har_parent"><a href="#instagram">Redes</a>
+                        </li> 
+                        <li class="har_parent"><a href="#contacto">Contáctame</a>
+                        </li>                
+                    </ul>
+                </div>
+                <!-- Top Menu End -->
+            </div>
+            <!-- container end -->
+        </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Firefly -->
+    <div class="har_firefly" data-total="60" data-minPixel="1" data-maxPixel="5"></div>
+    <!-- Slide Down -->
+    <a class="har_scroll_down har_go" href="#har_content" data-0="opacity:1; bottom:40px;" data--400-bottom="opacity:0; bottom:80px;">
+        <b data-0="height:40px" data--400-bottom="height:55px"></b>
+        Scroll
+    </a>
+    <!-- Slider -->
+    <div class="har_slider_carousel">
+
+        <!-- Item -->
+
+        <div class="har_slider har_wht_txt">
+
+            <div class="har_slider_img har_image_bck" data-image="{{Variables::valor('banner1')}}"></div>
+
+            <!-- Over -->
+
+            <div class="har_over" data-color="#000" data-opacity="0"></div>
+
+            <!-- Slider Texts -->
+
+            <div class="container">
+
+                <div class="har_slide_txt har_slide_left_middle text-left" data-0="opacity:1; margin-top:0px" data--400-bottom="opacity:0; margin-top:-100px">
+
+                    <div class="har_slide_title">{{Variables::valor('TitBanner1')}}</div>
+
+                    <div class="har_slide_subtitle">{{Variables::valor('SubTitBanner1')}}</div>
+
+                </div> 
 
             </div>
-            <!-- Top Menu -->
-            <div class="har_top_menu_cont">
-                <ul class="har_top_menu">
-                    <li class="har_parent"><a href="#servicios">Nuestros Servicios</a>
-                    </li>
-                    <li class="har_parent"><a href="#noticias">Noticias</a>
-                    </li>
-                    <li class="har_parent"><a href="#next_event">Mixcloud</a>
-                    </li>
-                    <li class="har_parent"><a href="#canciones">Canciones</a>
-                    </li> 
-                    <li class="har_parent"><a href="#calendario">Calendario</a>
-                    </li>
-                    <li class="har_parent"><a href="#galeria">Galeria</a>
-                    </li>
-                    <li class="har_parent"><a href="#instagram">Redes</a>
-                    </li> 
-                    <li class="har_parent"><a href="#contacto">Contáctame</a>
-                    </li>                
-                </ul>
-            </div>
-            <!-- Top Menu End -->
+
+            <!-- Slider Texts End -->
+
         </div>
-        <!-- container end -->
-    </nav>
-</header>
-<!-- Header End -->
-<!-- Firefly -->
-<div class="har_firefly" data-total="60" data-minPixel="1" data-maxPixel="5"></div>
-<!-- Slide Down -->
-<a class="har_scroll_down har_go" href="#har_content" data-0="opacity:1; bottom:40px;" data--400-bottom="opacity:0; bottom:80px;">
-    <b data-0="height:40px" data--400-bottom="height:55px"></b>
-    Scroll
-</a>
-<!-- Slider -->
-<div class="har_slider_carousel">
 
-    <!-- Item -->
+        <!-- Item -->
 
-    <div class="har_slider har_wht_txt">
+        <div class="har_slider  har_wht_txt">
 
-        <div class="har_slider_img har_image_bck" data-image="{{Variables::valor('banner1')}}"></div>
+            <div class="har_slider_img har_image_bck" data-image="{{Variables::valor('banner2')}}"></div>
 
-        <!-- Over -->
+            <!-- Over -->
 
-        <div class="har_over" data-color="#000" data-opacity="0"></div>
+            <div class="har_over" data-color="#000" data-opacity="0"></div>
 
-        <!-- Slider Texts -->
+            <!-- Slider Texts -->
 
-        <div class="container">
+            <div class="container">
 
-            <div class="har_slide_txt har_slide_left_middle text-left" data-0="opacity:1; margin-top:0px" data--400-bottom="opacity:0; margin-top:-100px">
+             <div class="har_slide_txt har_slide_left_middle text-left" data-0="opacity:1; margin-top:0px" data--400-bottom="opacity:0; margin-top:-100px">
 
-                <div class="har_slide_title">{{Variables::valor('TitBanner1')}}</div>
+                <div class="har_slide_title">{{Variables::valor('TitBanner2')}}</div>
 
-                <div class="har_slide_subtitle">{{Variables::valor('SubTitBanner1')}}</div>
+                <div class="har_slide_subtitle">{{Variables::valor('SubTitBanner2')}}</div>
 
-            </div> 
+            </div>
 
         </div>
 
@@ -164,35 +193,7 @@ use App\Servicios;
 
     </div>
 
-    <!-- Item -->
-
-    <div class="har_slider  har_wht_txt">
-
-        <div class="har_slider_img har_image_bck" data-image="{{Variables::valor('banner2')}}"></div>
-
-        <!-- Over -->
-
-        <div class="har_over" data-color="#000" data-opacity="0"></div>
-
-        <!-- Slider Texts -->
-
-        <div class="container">
-
-           <div class="har_slide_txt har_slide_left_middle text-left" data-0="opacity:1; margin-top:0px" data--400-bottom="opacity:0; margin-top:-100px">
-
-            <div class="har_slide_title">{{Variables::valor('TitBanner2')}}</div>
-
-            <div class="har_slide_subtitle">{{Variables::valor('SubTitBanner2')}}</div>
-
-        </div>
-
-    </div>
-
-    <!-- Slider Texts End -->
-
-</div>
-
-<!-- container end -->
+    <!-- container end -->
 
 </div>
 
@@ -210,14 +211,14 @@ use App\Servicios;
                 <div class="">
                     @foreach($servicios as $servicio)
                     <div class="col-md-4">
-                    <a href="{{$servicio->enlace}}">
-                        <div class="har_icon_box har_team_box">
-                            <div class="har_icon_box_photo">
-                                <img src="{{$servicio->imagen}}" alt="">
-                            </div>
-                            <h4><b>{{$servicio->titulo}}</b> <br></h4>
-                        </div> 
-                    </a>
+                        <a href="{{$servicio->enlace}}">
+                            <div class="har_icon_box har_team_box">
+                                <div class="har_icon_box_photo">
+                                    <img src="{{$servicio->imagen}}" alt="">
+                                </div>
+                                <h4><b>{{$servicio->titulo}}</b> <br></h4>
+                            </div> 
+                        </a>
                     </div>
                     @endforeach
                 </div>
@@ -336,7 +337,7 @@ use App\Servicios;
 
             <!-- CountDown -->
 
-           <iframe id="mixcloudframe" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&autoplay=1&feed=%2Fwillyflechas%2F" frameborder="0" ></iframe>
+            <iframe id="mixcloudframe" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&autoplay=1&feed=%2Fwillyflechas%2F" frameborder="0" ></iframe>
 
 
             <div class="row">
@@ -403,11 +404,11 @@ use App\Servicios;
     <section class="har_section har_image_bck" style="background: #06588d">
         <div class="container-fluid har_wht_txt text-center">
             <div class="row har_new_events">
-        <div class="container text-center" style="padding-bottom: 0px;">
-            <h2>Calendario</h2>
-            <h3>Disponibilidad y eventos</h3>
-        </div>
-        @foreach(Calendario::all() as $calendario)
+                <div class="container text-center" style="padding-bottom: 0px;">
+                    <h2>Calendario</h2>
+                    <h3>Disponibilidad y eventos</h3>
+                </div>
+                @foreach(Calendario::all() as $calendario)
                 <a href="" class="har_new_events_item col-md-3">
                     <div class="har_new_events_item_desc har_image_bck" data-color="#06588D">
                         <span>{{$calendario->fecha}} </span>
@@ -416,7 +417,7 @@ use App\Servicios;
                     </div>
                     <span class="har_new_events_item_img har_image_bck" data-image="{{$calendario->imagen}}"><b>Ver</b></span>
                 </a>
-        @endforeach
+                @endforeach
 
             </div>
         </div>
@@ -459,7 +460,7 @@ use App\Servicios;
             <!-- grid -->
 
             
-           <div class="har_portfolio grid">
+            <div class="har_portfolio grid">
 
 
 
@@ -538,7 +539,7 @@ use App\Servicios;
 
                             <span class="har_port_icons">
 
-                            
+
 
                                 <a href="{{Galeria::valor('FotoGrande3')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -568,7 +569,7 @@ use App\Servicios;
 
                             <span class="har_port_icons">
 
-                                
+
 
                                 <a href="{{Galeria::valor('FotoGrande4')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -602,7 +603,7 @@ use App\Servicios;
 
                             <span class="har_port_icons">
 
-                                
+
 
                                 <a href="{{Galeria::valor('FotoGrande5')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -632,7 +633,7 @@ use App\Servicios;
 
                             <span class="har_port_icons">
 
-                                
+
 
                                 <a href="{{Galeria::valor('FotoGrande6')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
@@ -662,49 +663,66 @@ use App\Servicios;
 
     </section>
     <!-- REDES SOCIALES -->
-
     <section class="har_section har_image_bck har_wht_txt" id="testimonials" data-color="#292929" style="background-color: rgb(41, 41, 41);">
-        <div class="text-center" style="padding-bottom: 40px">
-            <br><br>
+        <div class="container text-center">
             <h2>Redes Sociales</h2>
-            <div class="har_icon_boxes row text-centered har_team_slider_bw" style="margin-top: 0px;">
-                <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active" class="noactive" style="">
-                    <a class="col-xs-2 col-xs-offset-1 rstres" href="https://vimeo.com/user2512212/" target="_blank">
-                        <div class="har_news_block text-center rsdos" style="transition-delay: 0.1s; background-color: cornflowerblue; ">
-                                <i class="ti ti-vimeo har_icon_box rsuno"></i>
-                        </div>
-                    </a>
-                    <a class="col-xs-2 rstres" href="https://www.instagram.com/willy_flechas/" target="_blank">
-                        <div class="har_news_block text-center rsdos" style="transition-delay: 0.1s; background-color: hotpink; ">
-                                <i class="ti ti-instagram har_icon_box rsuno"></i>
-                        </div>
-                    </a>
-                    <a class="col-xs-2 rstres" href="https://www.facebook.com/djwillyflechas/" target="_blank">
-                        <div class="har_news_block text-center rsdos" style="transition-delay: 0.1s; background-color: darkblue; ">
-                                <i class="ti ti-facebook har_icon_box rsuno"></i>
-                        </div>
-                    </a>
-                    <a class="col-xs-2 rstres" href="https://twitter.com/willyflechas/" target="_blank">
-                        <div class="har_news_block text-center rsdos" style="transition-delay: 0.1s; background-color: darkturquoise; ">
-                                <i class="ti ti-twitter har_icon_box rsuno"></i>
-                        </div>
-                    </a>
-                    <a class="col-xs-2 rstres" href="https://www.mixcloud.com/willyflechas/" target="_blank">
-                        <div class="har_news_block text-center rsdos" style="transition-delay: 0.1s; background-color: gray; ">
-                                <i class="ti ti-soundcloud har_icon_box rsuno"></i>
-                        </div>
-                    </a>                                       
+            <div class="har_icon_boxes row text-left har_team_slider_bw">
+                <div class="redes-sociales" data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
+                    <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1">
+                        <a href="https://vimeo.com/user2512212/" target="_blank">
+                            <div class="har_news_block text-center" style="transition-delay: 0s; background-color: #00adef">
+                                <span class="har_news_img">
+                                    <i class="fa fa-vimeo fa-3x" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <a href="https://www.instagram.com/willy_flechas/" target="_blank">
+                            <div class="har_news_block text-center" style="transition-delay: 0s; background-color: #ED4956">
+                                <span class="har_news_img">
+                                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <a href="https://www.facebook.com/djwillyflechas/" target="_blank">
+                            <div class="har_news_block text-center" style="transition-delay: 0s; background-color: #4267b2">
+                                <span class="har_news_img">
+                                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <a href="https://twitter.com/willyflechas/" target="_blank">
+                            <div class="har_news_block text-center" style="transition-delay: 0s; background-color: #1da1f2">
+                                <span class="har_news_img">
+                                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <a href="https://www.mixcloud.com/willyflechas/" target="_blank">
+                            <div class="har_news_block text-center" style="transition-delay: 0s; background-color: #34495e">
+                                <span class="har_news_img">
+                                    <i class="fa fa-mixcloud fa-3x" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div> 
                 </div>
             </div>
         </div>
     </section>
     <!-- end REDES SOCIALES -->
+
     @include('layouts.contacto')
     @include('layouts.footer')
-
 </div>
 <!-- Page End -->
-
 <!-- JQuery -->
 <script src="js/jquery-1.12.3.min.js"></script> 
 <!-- Library JS -->
