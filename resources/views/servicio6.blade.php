@@ -58,291 +58,149 @@ use App\Servicios;
 
     <!-- Preloader End -->
 
+    <!-- Header -->
+
+    <header>       
+
+        <nav class="har_light_nav har_transp_nav">
+
+            <div class="container">
+
+                <!-- Logo -->
 
 
-  
+                <a href="/" class="har_logo" style="margin-left: 0px!important;"><img src="/img/logo.png" alt="" style="max-height: 35px;float: left;">
+                    <!-- <div style="float: left;"><span style="font-family:'Nexa'; text-transform: capitalize; font-weight: 200; font-size: 19px"><strong>Willy</strong>Flechas<br><nr style="font-size: 8px; font-weight: light">EVENTOS Y ESPECTACULOS</nr></span></div> -->
+                </a>
 
+                <!-- Logo End-->
 
+                <div class="har_top_menu_mobile_link">
 
+                    <i class="ti ti-menu"></i>
 
-   <!-- Header -->
-
-   <header>       
-
-
-
-    <nav class="har_light_nav har_transp_nav">
-
-        <div class="container">
-
-
-
-            <!-- Logo -->
-
-
-            <a href="/" class="har_logo" style="margin-left: 0px!important;"><img src="/img/logosintext.png" alt="" style="max-height: 35px;float: left;">
-                <img class="texto-logo" src="/img/texto-blanco.png" style="max-height: 34px" alt="">
-                <!-- <div style="float: left;"><span style="font-family:'Nexa'; text-transform: capitalize; font-weight: 200; font-size: 19px"><strong>Willy</strong>Flechas<br><nr style="font-size: 8px; font-weight: light">EVENTOS Y ESPECTACULOS</nr></span></div> -->
-            </a>
-
-
-            <!-- Logo End-->
-
-
-            <div class="har_top_menu_mobile_link">
-
-                <i class="ti ti-menu"></i>
-
+                </div>
+                <!-- Top Menu -->
+                <div class="har_top_menu_cont">
+                    <ul class="har_top_menu">
+                        <li class="har_parent"><a href="/#servicios">Nuestros Servicios</a>
+                        </li>
+                        <li class="har_parent"><a href="/#noticias">Noticias</a>
+                        </li>
+                        <li class="har_parent"><a href="/#next_event">Mixcloud</a>
+                        </li>
+                        <li class="har_parent"><a href="/#canciones">Canciones</a>
+                        </li> 
+                        <li class="har_parent"><a href="/#calendario">Calendario</a>
+                        </li>
+                        <li class="har_parent"><a href="/#galeria">Galeria</a>
+                        </li>
+                        <li class="har_parent"><a href="/#instagram">Redes</a>
+                        </li> 
+                        <li class="har_parent"><a href="/#contacto">Contáctame</a>
+                        </li>                
+                    </ul>
+                </div>
+                <!-- Top Menu End -->
             </div>
-            <!-- Top Menu -->
-            <div class="har_top_menu_cont">
-                <ul class="har_top_menu">
-                    <li class="har_parent"><a href="/#servicios">Nuestros Servicios</a>
-                    </li>
-                    <li class="har_parent"><a href="/#noticias">Noticias</a>
-                    </li>
-                    <li class="har_parent"><a href="/#next_event">Mixcloud</a>
-                    </li>
-                    <li class="har_parent"><a href="/#canciones">Canciones</a>
-                    </li> 
-                    <li class="har_parent"><a href="/#calendario">Calendario</a>
-                    </li>
-                    <li class="har_parent"><a href="/#galeria">Galeria</a>
-                    </li>
-                    <li class="har_parent"><a href="/#instagram">Redes</a>
-                    </li> 
-                    <li class="har_parent"><a href="/#contacto">Contáctame</a>
-                    </li>                
-                </ul>
-            </div>
-            <!-- Top Menu End -->
-        </div>
-        <!-- container end -->
-    </nav>
-</header>
+            <!-- container end -->
+        </nav>
+    </header>
     <!-- section end -->
 
     <section class="har_section har_image_bck" id="galeria">
 
         <div class="container-fluid text-center">
 
-
-
             <h2 style="font-family:'Montserrat', sans-serif; margin-top: 155px">Producer</h2>
 
-
             <p style="font-size: 16px; margin-top: 30px">Contamos con un laboratorio audiovisual para la realización de cuñas, drops para dj, edición de video y demás. Contacta con nosotros para recibir una propuesta según tus requerimientos.
- <br>
-                <br>
-                <a href="#contacto"><button type="link" href="#contacto">COTIZACION</button></a>
-</p>
+               <br>
+               <br>
+               <a href="#contacto"><button type="link" href="#contacto">COTIZACION</button></a>
+           </p>
 
-            <!-- grid -->
+           <!-- grid -->
 
            <div class="har_portfolio grid">
 
+            <!-- item -->
 
+            <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
 
-                <!-- item -->
+                <div class="har_portfolio_item_cont">
 
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
+                    <img src="/img/servicios/6/6-1.jpg" alt="">
 
-                    <div class="har_portfolio_item_cont">
+                    <span class="har_port_titles">
 
-                        <img src="{{Galeria::valor('foto1')}}" alt="">
+                        <span class="har_port_icons">
 
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title1')}}</span>
-
-                            
-
-                            <span class="har_port_icons">
-
-                                <a href="#"><i class="ti ti-link"></i></a>
-
-                                <a href="{{Galeria::valor('FotoGrande1')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
+                            <a href="/img/servicios/6/6-1.jpg" class="lightbox"><i class="ti ti-search"></i></a>
 
                         </span>
 
-                    </div>
+                    </span>
 
                 </div>
-
-
-
-                <!-- item -->
-
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase2')}}">
-
-                    <div class="har_portfolio_item_cont">
-
-                        <img src="{{Galeria::valor('foto2')}}" alt="">
-
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title2')}}</span>
-
-                            
-
-                            <span class="har_port_icons">
-
-
-                                <a href="{{Galeria::valor('FotoGrande2')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- item -->
-
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
-
-                    <div class="har_portfolio_item_cont">
-
-                        <img src="{{Galeria::valor('foto1')}}" alt="">
-
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title3')}}</span>
-
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle3')}}</span>
-
-                            <span class="har_port_icons">
-
-                            
-
-                                <a href="{{Galeria::valor('FotoGrande3')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- item -->
-
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase4')}}">
-
-                    <div class="har_portfolio_item_cont">
-
-                        <img src="{{Galeria::valor('foto2')}}" alt="">
-
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title4')}}</span>
-
-                            
-
-                            <span class="har_port_icons">
-
-                                
-
-                                <a href="{{Galeria::valor('FotoGrande4')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-
-
-
-
-                <!-- item -->
-
-                <div class="col-sm-4 har_portfolio_item grid-item event {{Galeria::valor('clase1')}}">
-
-                    <div class="har_portfolio_item_cont">
-
-                        <img src="{{Galeria::valor('foto2')}}" alt="">
-
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title5')}}</span>
-
-                            
-
-                            <span class="har_port_icons">
-
-                                
-
-                                <a href="{{Galeria::valor('FotoGrande5')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- item -->
-
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
-
-                    <div class="har_portfolio_item_cont">
-
-                        <img src="{{Galeria::valor('foto1')}}" alt="">
-
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title6')}}</span>
-
-                            
-
-                            <span class="har_port_icons">
-
-                                
-
-                                <a href="{{Galeria::valor('FotoGrande6')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-
 
             </div>
-            
-            <!-- grid end -->
 
+            <!-- item -->
 
+            <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase2')}}">
+
+                <div class="har_portfolio_item_cont">
+
+                    <img src="/img/servicios/6/6-2.jpg" alt="">
+
+                    <span class="har_port_titles">
+
+                        <span class="har_port_icons">
+
+                            <a href="/img/servicios/6/6-2.jpg" class="lightbox"><i class="ti ti-search"></i></a>
+
+                        </span>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- item -->
+
+            <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
+
+                <div class="har_portfolio_item_cont">
+
+                    <img src="/img/servicios/6/6-3.jpg" alt="">
+
+                    <span class="har_port_titles">
+
+                        <span class="har_port_icons">
+
+                            <a href="/img/servicios/6/6-3.jpg" class="lightbox"><i class="ti ti-search"></i></a>
+
+                        </span>
+
+                    </span>
+
+                </div>
+
+            </div>
 
         </div>
 
-        <!-- container end -->
+        <!-- grid end -->
 
+    </div>
 
+    <!-- container end -->
 
-    </section>
+</section>
 
-   @include('layouts.contacto')
+@include('layouts.contacto')
 @include('layouts.footer')
 </div>
 <!-- Page End -->

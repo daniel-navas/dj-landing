@@ -14,54 +14,54 @@ use App\Servicios;
 
 <head>
 
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Willy Flechas DJ</title>
+	<title>Willy Flechas DJ</title>
 
-    <!-- Library CSS -->
+	<!-- Library CSS -->
 
-    <link href="css/harmony_library.css" rel="stylesheet">
-    <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+	<link href="css/harmony_library.css" rel="stylesheet">
+	<link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
 
 
-    <!-- Icons CSS -->
+	<!-- Icons CSS -->
 
-    <link href="fonts/themify-icons.css" rel="stylesheet">
+	<link href="fonts/themify-icons.css" rel="stylesheet">
 
-    <!-- Theme CSS -->
+	<!-- Theme CSS -->
 
-    <link href="css/harmony_style.css" rel="stylesheet">
+	<link href="css/harmony_style.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
+	<!-- Google Fonts -->
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
-    <style type="text/css">
-    .rsuno{
-        margin-left: -7px;
-    }
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+	<style type="text/css">
+	.rsuno{
+		margin-left: -7px;
+	}
 </style>
 </head>
 
 <body class="har_middle_titles">
 
-    <!-- Preloader -->
+	<!-- Preloader -->
 
-    <div class="har_preloader">
+	<div class="har_preloader">
 
-        <span class="har_logo_eq">
+		<span class="har_logo_eq">
 
-            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
 
-        </span>
+		</span>
 
-    </div>
+	</div>
 
-    <!-- Preloader End -->
+	<!-- Preloader End -->
 
 
 
@@ -70,667 +70,658 @@ use App\Servicios;
 
 
 
-    <!-- Header -->
+	<!-- Header -->
 
-    <header>       
+	<header>       
 
 
 
 
-        <nav class="har_light_nav har_transp_nav">
+		<nav class="har_light_nav har_transp_nav">
 
-            <div class="container">
+			<div class="container">
 
+				<!-- Logo -->
 
+				<a href="/" class="har_logo" style="margin-left: 0px!important;"><img src="/img/logo.png" alt="" style="max-height: 35px;float: left;"></a>
 
-                <!-- Logo -->
+				<!-- Logo End-->
 
+				<div class="har_top_menu_mobile_link">
 
-                <a href="/" class="har_logo" style="margin-left: 0px!important;"><img src="/img/logosintext.png" alt="" style="max-height: 35px;float: left;">
-                    <img class="texto-logo" src="/img/texto-blanco.png" style="max-height: 34px" alt="">
+					<i class="ti ti-menu"></i>
 
-                </a>
+				</div>
+				<!-- Top Menu -->
+				<div class="har_top_menu_cont">
+					<ul class="har_top_menu">
+						<li class="har_parent"><a href="#servicios">Nuestros Servicios</a>
+						</li>
+						<li class="har_parent"><a href="#noticias">Noticias</a>
+						</li>
+						<li class="har_parent"><a href="#next_event">Mixcloud</a>
+						</li>
+						<li class="har_parent"><a href="#canciones">Descargas</a>
+						</li> 
+						<li class="har_parent"><a href="#calendario">Calendario</a>
+						</li>
+						<li class="har_parent"><a href="#galeria">Galeria</a>
+						</li>
+						<li class="har_parent"><a href="#redes-sociales">Redes</a>
+						</li> 
+						<li class="har_parent"><a href="#contacto">Contáctame</a>
+						</li>                
+					</ul>
+				</div>
+				<!-- Top Menu End -->
+			</div>
+			<!-- container end -->
+		</nav>
+	</header>
+	<!-- Header End -->
+	<!-- Firefly -->
+	<div class="har_firefly" data-total="60" data-minPixel="1" data-maxPixel="5"></div>
+	<!-- Slide Down -->
+	<a class="har_scroll_down har_go" href="#har_content" data-0="opacity:1; bottom:40px;" data--400-bottom="opacity:0; bottom:80px;">
+		<b data-0="height:40px" data--400-bottom="height:55px"></b>
+		Scroll
+	</a>
+	<!-- Slider -->
+	<div class="har_slider_carousel">
 
+		<!-- Item -->
 
-                <!-- Logo End-->
+		<div class="har_slider har_wht_txt">
 
+			<div class="har_slider_img har_image_bck" data-image="{{Variables::valor('banner1')}}"></div>
 
-                <div class="har_top_menu_mobile_link">
+			<!-- Over -->
 
-                    <i class="ti ti-menu"></i>
+			<div class="har_over" data-color="#000" data-opacity="0"></div>
 
-                </div>
-                <!-- Top Menu -->
-                <div class="har_top_menu_cont">
-                    <ul class="har_top_menu">
-                        <li class="har_parent"><a href="#servicios">Nuestros Servicios</a>
-                        </li>
-                        <li class="har_parent"><a href="#noticias">Noticias</a>
-                        </li>
-                        <li class="har_parent"><a href="#next_event">Mixcloud</a>
-                        </li>
-                        <li class="har_parent"><a href="#canciones">Canciones</a>
-                        </li> 
-                        <li class="har_parent"><a href="#calendario">Calendario</a>
-                        </li>
-                        <li class="har_parent"><a href="#galeria">Galeria</a>
-                        </li>
-                        <li class="har_parent"><a href="#instagram">Redes</a>
-                        </li> 
-                        <li class="har_parent"><a href="#contacto">Contáctame</a>
-                        </li>                
-                    </ul>
-                </div>
-                <!-- Top Menu End -->
-            </div>
-            <!-- container end -->
-        </nav>
-    </header>
-    <!-- Header End -->
-    <!-- Firefly -->
-    <div class="har_firefly" data-total="60" data-minPixel="1" data-maxPixel="5"></div>
-    <!-- Slide Down -->
-    <a class="har_scroll_down har_go" href="#har_content" data-0="opacity:1; bottom:40px;" data--400-bottom="opacity:0; bottom:80px;">
-        <b data-0="height:40px" data--400-bottom="height:55px"></b>
-        Scroll
-    </a>
-    <!-- Slider -->
-    <div class="har_slider_carousel">
+			<!-- Slider Texts -->
 
-        <!-- Item -->
+			<div class="container">
 
-        <div class="har_slider har_wht_txt">
+				<div class="har_slide_txt har_slide_left_middle text-left" data-0="opacity:1; margin-top:0px" data--400-bottom="opacity:0; margin-top:-100px">
 
-            <div class="har_slider_img har_image_bck" data-image="{{Variables::valor('banner1')}}"></div>
+					<div class="har_slide_title">{{Variables::valor('TitBanner1')}}</div>
 
-            <!-- Over -->
+					<div class="har_slide_subtitle">{{Variables::valor('SubTitBanner1')}}</div>
 
-            <div class="har_over" data-color="#000" data-opacity="0"></div>
+				</div> 
 
-            <!-- Slider Texts -->
+			</div>
 
-            <div class="container">
+			<!-- Slider Texts End -->
 
-                <div class="har_slide_txt har_slide_left_middle text-left" data-0="opacity:1; margin-top:0px" data--400-bottom="opacity:0; margin-top:-100px">
+		</div>
 
-                    <div class="har_slide_title">{{Variables::valor('TitBanner1')}}</div>
+		<!-- Item -->
 
-                    <div class="har_slide_subtitle">{{Variables::valor('SubTitBanner1')}}</div>
+		<div class="har_slider  har_wht_txt">
 
-                </div> 
+			<div class="har_slider_img har_image_bck" data-image="{{Variables::valor('banner2')}}"></div>
 
-            </div>
+			<!-- Over -->
 
-            <!-- Slider Texts End -->
+			<div class="har_over" data-color="#000" data-opacity="0"></div>
 
-        </div>
+			<!-- Slider Texts -->
 
-        <!-- Item -->
+			<div class="container">
 
-        <div class="har_slider  har_wht_txt">
+				<div class="har_slide_txt har_slide_left_middle text-left" data-0="opacity:1; margin-top:0px" data--400-bottom="opacity:0; margin-top:-100px">
 
-            <div class="har_slider_img har_image_bck" data-image="{{Variables::valor('banner2')}}"></div>
+					<div class="har_slide_title">{{Variables::valor('TitBanner2')}}</div>
 
-            <!-- Over -->
+					<div class="har_slide_subtitle">{{Variables::valor('SubTitBanner2')}}</div>
 
-            <div class="har_over" data-color="#000" data-opacity="0"></div>
+				</div>
 
-            <!-- Slider Texts -->
+			</div>
 
-            <div class="container">
+			<!-- Slider Texts End -->
 
-             <div class="har_slide_txt har_slide_left_middle text-left" data-0="opacity:1; margin-top:0px" data--400-bottom="opacity:0; margin-top:-100px">
+		</div>
 
-                <div class="har_slide_title">{{Variables::valor('TitBanner2')}}</div>
+		<!-- container end -->
 
-                <div class="har_slide_subtitle">{{Variables::valor('SubTitBanner2')}}</div>
+	</div>
 
-            </div>
+	<!-- Slider End -->
 
-        </div>
+	<!-- Main Section -->
 
-        <!-- Slider Texts End -->
+	<section id="har_content" class="har_content">
+		<!-- SERVICIOS -->
+		<section class="har_section har_image_bck" id="servicios">
+			<div class="container text-center">
+				<h2>Nuestros Servicios</h2>
+				<h3>Tenemos todo lo que necesitas para tu evento!</h3>
+				<div class="har_icon_boxes row text-center">
+					<div class="">
+						@foreach($servicios as $servicio)
+						<div class="col-md-4">
+							<a href="{{$servicio->enlace}}">
+								<div class="har_icon_box har_team_box">
+									<div class="har_icon_box_photo">
+										<img src="{{$servicio->imagen}}" alt="">
+									</div>
+									<h4><b>{{$servicio->titulo}}</b> <br></h4>
+								</div> 
+							</a>
+						</div>
+						@endforeach
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end SERVICIOS -->
+		<!-- section -->
 
-    </div>
+		<section class="har_section har_image_bck" id="noticias">
 
-    <!-- container end -->
+			<div class="container-fluid text-center">
 
-</div>
 
-<!-- Slider End -->
 
-<!-- Main Section -->
+				<!-- row -->
 
-<section id="har_content" class="har_content">
-    <!-- SERVICIOS -->
-    <section class="har_section har_image_bck" id="servicios">
-        <div class="container text-center">
-            <h2>Nuestros Servicios</h2>
-            <h3>Tenemos todo lo que necesitas para tu evento!</h3>
-            <div class="har_icon_boxes row text-center">
-                <div class="">
-                    @foreach($servicios as $servicio)
-                    <div class="col-md-4">
-                        <a href="{{$servicio->enlace}}">
-                            <div class="har_icon_box har_team_box">
-                                <div class="har_icon_box_photo">
-                                    <img src="{{$servicio->imagen}}" alt="">
-                                </div>
-                                <h4><b>{{$servicio->titulo}}</b> <br></h4>
-                            </div> 
-                        </a>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end SERVICIOS -->
-    <!-- section -->
+				<div class="row har_auto_height">
 
-    <section class="har_section har_image_bck" id="noticias">
 
-        <div class="container-fluid text-center">
 
+					<!-- item -->
 
+					<div class="col-md-4 har_image_bck har_wht_txt" data-color="#003D66">
 
-            <!-- row -->
+						<div class="har_simple_block_mini">
 
-            <div class="row har_auto_height">
+							<h2>{{Variables::valor('TitNoticia1')}}</h2>
 
+							<h3>{{Variables::valor('SubTitNoticia1')}}</h3>
 
+							<p>{{Variables::valor('textNoticia1')}} </p>
 
-                <!-- item -->
+						</div>
 
-                <div class="col-md-4 har_image_bck har_wht_txt" data-color="#003D66">
+					</div>
 
-                    <div class="har_simple_block_mini">
 
-                        <h2>{{Variables::valor('TitNoticia1')}}</h2>
 
-                        <h3>{{Variables::valor('SubTitNoticia1')}}</h3>
+					<!-- item -->
 
-                        <p>{{Variables::valor('textNoticia1')}} </p>
+					<div class="col-md-4 har_image_bck har_wht_txt" data-color="#06588D">
 
-                    </div>
+						<div class="har_simple_block_mini">
 
-                </div>
+							<h2>{{Variables::valor('TitNoticia2')}}</h2>
 
+							<h3>{{Variables::valor('SubTitNoticia2')}}</h3>
 
+							<p>{{Variables::valor('textNoticia2')}} </p>
 
-                <!-- item -->
+						</div>
 
-                <div class="col-md-4 har_image_bck har_wht_txt" data-color="#06588D">
+					</div>
 
-                    <div class="har_simple_block_mini">
 
-                        <h2>{{Variables::valor('TitNoticia2')}}</h2>
 
-                        <h3>{{Variables::valor('SubTitNoticia2')}}</h3>
+					<!-- item -->
 
-                        <p>{{Variables::valor('textNoticia2')}} </p>
+					<div class="col-md-4 har_image_bck har_wht_txt" data-color="#003D66">
 
-                    </div>
+						<div class="har_simple_block_mini">
 
-                </div>
+							<h2>{{Variables::valor('TitNoticia3')}}</h2>
 
+							<h3>{{Variables::valor('SubTitNoticia3')}}</h3>
 
+							<p>{{Variables::valor('textNoticia3')}} </p>
 
-                <!-- item -->
+						</div>
 
-                <div class="col-md-4 har_image_bck har_wht_txt" data-color="#003D66">
+					</div>
 
-                    <div class="har_simple_block_mini">
 
-                        <h2>{{Variables::valor('TitNoticia3')}}</h2>
 
-                        <h3>{{Variables::valor('SubTitNoticia3')}}</h3>
+				</div>
 
-                        <p>{{Variables::valor('textNoticia3')}} </p>
+				<!-- row end -->
 
-                    </div>
 
-                </div>
 
+			</div>
 
+			<!-- container end -->
 
-            </div>
 
-            <!-- row end -->
 
+		</section>
 
+		<!-- section end -->
 
-        </div>
 
-        <!-- container end -->
 
 
 
-    </section>
+		<!-- section -->
 
-    <!-- section end -->
+		<section class="har_section har_image_bck har_wht_txt har_fixed" data-image="{{Variables::valor('FondoEvento')}}" data-stellar-background-ratio="0.2" id="next_event">
 
 
 
+			<!-- Over -->
 
+			<div class="har_over" data-color="#333" data-opacity="0.8"></div>
 
-    <!-- section -->
 
-    <section class="har_section har_image_bck har_wht_txt har_fixed" data-image="{{Variables::valor('FondoEvento')}}" data-stellar-background-ratio="0.2" id="next_event">
 
+			<div class="container text-center">
 
 
-        <!-- Over -->
 
-        <div class="har_over" data-color="#333" data-opacity="0.8"></div>
+				<h2>MixCloud</h2>
 
 
 
-        <div class="container text-center">
 
+				<!-- CountDown -->
 
+				<iframe id="mixcloudframe" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&autoplay=1&feed=%2Fwillyflechas%2F" frameborder="0" ></iframe>
 
-            <h2>MixCloud</h2>
 
+				<div class="row">
 
+					<div class="col-md-6 col-md-offset-3">
 
 
-            <!-- CountDown -->
 
-            <iframe id="mixcloudframe" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&autoplay=1&feed=%2Fwillyflechas%2F" frameborder="0" ></iframe>
+						<h3>Mantenterse informado.</h3>
 
+						<form action="#">
 
-            <div class="row">
+							<input type="text" class="form-control" placeholder="E-mail Adress">
 
-                <div class="col-md-6 col-md-offset-3">
+							<input type="submit" class="btn" value="Subscribe">
 
+						</form>
 
+						{{-- <p>Please trust us, we will never send you spam.</p> --}}
 
-                    <h3>Mantenterse informado.</h3>
+					</div>     
 
-                    <form action="#">
 
-                        <input type="text" class="form-control" placeholder="E-mail Adress">
 
-                        <input type="submit" class="btn" value="Subscribe">
+				</div>
 
-                    </form>
 
-                    {{-- <p>Please trust us, we will never send you spam.</p> --}}
 
-                </div>     
+			</div>
 
+			<!-- container end -->
 
+		</section>
 
-            </div>
+		<!-- section end -->
+		<!-- DESCARGAS -->
+		<section class="har_section har_image_bck" data-color="#f2f2f2" id="canciones">
+			<div class="container text-center">
+				<h2>Descargas</h2>
+				<h3>Aquí podrás descargar nuestros más recientes mixes y remixes totalmente gratis!</h3>
+				<div class="har_team_slider">
+					@foreach($canciones as $index => $cancion)
+					<div class="har_shop_al_item_bl">
+						<a href="{{$cancion->enlace}}" class="har_shop_al_item" target="_blank" download="">
+							<span class="har_shop_item_disk">
+								<span class="har_shop_item_cover har_image_bck" data-image="{{$cancion->imagen}}"></span>
+								<span class="har_shop_item_env"></span>
+								<span class="har_shop_item_vinyl">
+									<span class="har_shop_item_vinyl_img har_image_bck" data-image="{{$cancion->imagen}}"></span>
+									<span class="har_shop_item_vinyl_hole"></span>
+								</span>
+							</span>
+						</a>
+						<h4>{{$cancion->nombre}}</h4>
+					</div>
+					@endforeach
 
+				</div>
+			</div>
+		</section>
+		<!-- end DESCARGAS -->
+		<!-- CALENDARIO -->    
+		<section class="har_section har_image_bck" id="calendario" style="background: #06588d">
+			<div class="container-fluid har_wht_txt text-center">
+				<div class="row har_new_events">
+					<div class="container text-center" style="padding-bottom: 0px;">
+						<h2>Calendario</h2>
+						<h3>Disponibilidad y eventos</h3>
+					</div>
+					@foreach(Calendario::all() as $calendario)
+					<a href="" class="har_new_events_item col-md-3">
+						<div class="har_new_events_item_desc har_image_bck" data-color="#06588D">
+							<span>{{$calendario->fecha}} </span>
+							<h4>{{$calendario->nombre}}</h4>
+							<h5><span class="ti ti-location-pin"></span>{{$calendario->ubicacion}}</h5>
+						</div>
+						<span class="har_new_events_item_img har_image_bck" data-image="{{$calendario->imagen}}"><b>Ver</b></span>
+					</a>
+					@endforeach
 
+				</div>
+			</div>
+		</section>
+		<!-- end CALENDARIO -->
+		<section class="har_section har_image_bck" id="galeria">
 
-        </div>
+			<div class="container-fluid text-center">
 
-        <!-- container end -->
 
-    </section>
 
-    <!-- section end -->
-    <!-- DESCARGAS -->
-    <section class="har_section har_image_bck" data-color="#f2f2f2" id="canciones">
-        <div class="container text-center">
-            <h2>Descargas</h2>
-            <h3>Aquí podrás descargar nuestros más recientes mixes y remixes totalmente gratis!</h3>
-            <div class="har_team_slider">
-                @foreach($canciones as $index => $cancion)
-                <div class="har_shop_al_item_bl">
-                    <a href="{{$cancion->enlace}}" class="har_shop_al_item" target="_blank" download="">
-                        <span class="har_shop_item_disk">
-                            <span class="har_shop_item_cover har_image_bck" data-image="{{$cancion->imagen}}"></span>
-                            <span class="har_shop_item_env"></span>
-                            <span class="har_shop_item_vinyl">
-                                <span class="har_shop_item_vinyl_img har_image_bck" data-image="{{$cancion->imagen}}"></span>
-                                <span class="har_shop_item_vinyl_hole"></span>
-                            </span>
-                        </span>
-                    </a>
-                    <h4>{{$cancion->nombre}}</h4>
-                </div>
-                @endforeach
+				<h2>Galeria de fotos</h2>
 
-            </div>
-        </div>
-    </section>
-    <!-- end DESCARGAS -->
-    <!-- CALENDARIO -->
-    
-    <section class="har_section har_image_bck" style="background: #06588d">
-        <div class="container-fluid har_wht_txt text-center">
-            <div class="row har_new_events">
-                <div class="container text-center" style="padding-bottom: 0px;">
-                    <h2>Calendario</h2>
-                    <h3>Disponibilidad y eventos</h3>
-                </div>
-                @foreach(Calendario::all() as $calendario)
-                <a href="" class="har_new_events_item col-md-3">
-                    <div class="har_new_events_item_desc har_image_bck" data-color="#06588D">
-                        <span>{{$calendario->fecha}} </span>
-                        <h4>{{$calendario->nombre}}</h4>
-                        <h5><span class="ti ti-location-pin"></span>{{$calendario->ubicacion}}</h5>
-                    </div>
-                    <span class="har_new_events_item_img har_image_bck" data-image="{{$calendario->imagen}}"><b>Ver</b></span>
-                </a>
-                @endforeach
+				<h3>Fotografica <br>
 
-            </div>
-        </div>
-    </section>
-    <!-- end CALENDARIO -->
-    <section class="har_section har_image_bck" id="galeria">
+					{{-- Don’t stay aside be the part of our performance --}}
 
-        <div class="container-fluid text-center">
+				</h3>
 
 
 
-            <h2>Galeria de fotos</h2>
+				<!-- filters -->
 
-            <h3>Fotografica <br>
+				<div class="button-group filter-button-group">
 
-                {{-- Don’t stay aside be the part of our performance --}}
+					<a data-filter="*">Todos</a>
 
-            </h3>
+					<a data-filter=".event">Evento</a>
 
+					<a data-filter=".musician">Musica</a>
 
+					<a data-filter=".mediam">Media</a>
 
-            <!-- filters -->
+				</div>
 
-            <div class="button-group filter-button-group">
+				<!-- filters end -->
 
-                <a data-filter="*">Todos</a>
 
-                <a data-filter=".event">Evento</a>
 
-                <a data-filter=".musician">Musica</a>
+				<!-- grid -->
 
-                <a data-filter=".mediam">Media</a>
 
-            </div>
+				<div class="har_portfolio grid">
 
-            <!-- filters end -->
 
 
+					<!-- item -->
 
-            <!-- grid -->
+					<div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
 
-            
-            <div class="har_portfolio grid">
+						<div class="har_portfolio_item_cont">
 
+							<img src="{{Galeria::valor('foto1')}}" alt="">
 
+							<span class="har_port_titles">
 
-                <!-- item -->
+								<span class="har_port_title">{{Galeria::valor('Title1')}}</span>
 
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
 
-                    <div class="har_portfolio_item_cont">
 
-                        <img src="{{Galeria::valor('foto1')}}" alt="">
+								<span class="har_port_icons">
 
-                        <span class="har_port_titles">
+									<a href="#"><i class="ti ti-link"></i></a>
 
-                            <span class="har_port_title">{{Galeria::valor('Title1')}}</span>
+									<a href="{{Galeria::valor('FotoGrande1')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
-                            
+								</span>
 
-                            <span class="har_port_icons">
+							</span>
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+						</div>
 
-                                <a href="{{Galeria::valor('FotoGrande1')}}" class="lightbox"><i class="ti ti-search"></i></a>
+					</div>
 
-                            </span>
 
-                        </span>
 
-                    </div>
+					<!-- item -->
 
-                </div>
+					<div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase2')}}">
 
+						<div class="har_portfolio_item_cont">
 
+							<img src="{{Galeria::valor('foto2')}}" alt="">
 
-                <!-- item -->
+							<span class="har_port_titles">
 
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase2')}}">
+								<span class="har_port_title">{{Galeria::valor('Title2')}}</span>
 
-                    <div class="har_portfolio_item_cont">
 
-                        <img src="{{Galeria::valor('foto2')}}" alt="">
 
-                        <span class="har_port_titles">
+								<span class="har_port_icons">
 
-                            <span class="har_port_title">{{Galeria::valor('Title2')}}</span>
 
-                            
+									<a href="{{Galeria::valor('FotoGrande2')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
-                            <span class="har_port_icons">
+								</span>
 
+							</span>
 
-                                <a href="{{Galeria::valor('FotoGrande2')}}" class="lightbox"><i class="ti ti-search"></i></a>
+						</div>
 
-                            </span>
+					</div>
 
-                        </span>
 
-                    </div>
 
-                </div>
+					<!-- item -->
 
+					<div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
 
+						<div class="har_portfolio_item_cont">
 
-                <!-- item -->
+							<img src="{{Galeria::valor('foto1')}}" alt="">
 
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
+							<span class="har_port_titles">
 
-                    <div class="har_portfolio_item_cont">
+								<span class="har_port_title">{{Galeria::valor('Title3')}}</span>
 
-                        <img src="{{Galeria::valor('foto1')}}" alt="">
+								<span class="har_port_subtitle">{{Galeria::valor('Subtitle3')}}</span>
 
-                        <span class="har_port_titles">
+								<span class="har_port_icons">
 
-                            <span class="har_port_title">{{Galeria::valor('Title3')}}</span>
 
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle3')}}</span>
 
-                            <span class="har_port_icons">
+									<a href="{{Galeria::valor('FotoGrande3')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
+								</span>
 
+							</span>
 
-                                <a href="{{Galeria::valor('FotoGrande3')}}" class="lightbox"><i class="ti ti-search"></i></a>
+						</div>
 
-                            </span>
+					</div>
 
-                        </span>
 
-                    </div>
 
-                </div>
+					<!-- item -->
 
+					<div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase4')}}">
 
+						<div class="har_portfolio_item_cont">
 
-                <!-- item -->
+							<img src="{{Galeria::valor('foto2')}}" alt="">
 
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase4')}}">
+							<span class="har_port_titles">
 
-                    <div class="har_portfolio_item_cont">
+								<span class="har_port_title">{{Galeria::valor('Title4')}}</span>
 
-                        <img src="{{Galeria::valor('foto2')}}" alt="">
 
-                        <span class="har_port_titles">
 
-                            <span class="har_port_title">{{Galeria::valor('Title4')}}</span>
+								<span class="har_port_icons">
 
-                            
 
-                            <span class="har_port_icons">
 
+									<a href="{{Galeria::valor('FotoGrande4')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
+								</span>
 
-                                <a href="{{Galeria::valor('FotoGrande4')}}" class="lightbox"><i class="ti ti-search"></i></a>
+							</span>
 
-                            </span>
+						</div>
 
-                        </span>
+					</div>
 
-                    </div>
 
-                </div>
 
 
 
 
 
+					<!-- item -->
 
+					<div class="col-sm-4 har_portfolio_item grid-item event {{Galeria::valor('clase1')}}">
 
-                <!-- item -->
+						<div class="har_portfolio_item_cont">
 
-                <div class="col-sm-4 har_portfolio_item grid-item event {{Galeria::valor('clase1')}}">
+							<img src="{{Galeria::valor('foto2')}}" alt="">
 
-                    <div class="har_portfolio_item_cont">
+							<span class="har_port_titles">
 
-                        <img src="{{Galeria::valor('foto2')}}" alt="">
+								<span class="har_port_title">{{Galeria::valor('Title5')}}</span>
 
-                        <span class="har_port_titles">
 
-                            <span class="har_port_title">{{Galeria::valor('Title5')}}</span>
 
-                            
+								<span class="har_port_icons">
 
-                            <span class="har_port_icons">
 
 
+									<a href="{{Galeria::valor('FotoGrande5')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
-                                <a href="{{Galeria::valor('FotoGrande5')}}" class="lightbox"><i class="ti ti-search"></i></a>
+								</span>
 
-                            </span>
+							</span>
 
-                        </span>
+						</div>
 
-                    </div>
+					</div>
 
-                </div>
 
 
+					<!-- item -->
 
-                <!-- item -->
+					<div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
 
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
+						<div class="har_portfolio_item_cont">
 
-                    <div class="har_portfolio_item_cont">
+							<img src="{{Galeria::valor('foto1')}}" alt="">
 
-                        <img src="{{Galeria::valor('foto1')}}" alt="">
+							<span class="har_port_titles">
 
-                        <span class="har_port_titles">
+								<span class="har_port_title">{{Galeria::valor('Title6')}}</span>
 
-                            <span class="har_port_title">{{Galeria::valor('Title6')}}</span>
 
-                            
 
-                            <span class="har_port_icons">
+								<span class="har_port_icons">
 
 
 
-                                <a href="{{Galeria::valor('FotoGrande6')}}" class="lightbox"><i class="ti ti-search"></i></a>
+									<a href="{{Galeria::valor('FotoGrande6')}}" class="lightbox"><i class="ti ti-search"></i></a>
 
-                            </span>
+								</span>
 
-                        </span>
+							</span>
 
-                    </div>
+						</div>
 
-                </div>
+					</div>
 
 
 
 
 
-            </div>
+				</div>
 
-            <!-- grid end -->
+				<!-- grid end -->
 
 
 
-        </div>
+			</div>
 
-        <!-- container end -->
+			<!-- container end -->
 
 
 
-    </section>
-    <!-- REDES SOCIALES -->
-    <section class="har_section har_image_bck har_wht_txt" id="testimonials" data-color="#292929" style="background-color: rgb(41, 41, 41);">
-        <div class="container text-center">
-            <h2>Redes Sociales</h2>
-            <div class="har_icon_boxes row text-left har_team_slider_bw">
-                <div class="redes-sociales" data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
-                    <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1">
-                        <a href="https://vimeo.com/user2512212/" target="_blank">
-                            <div class="har_news_block text-center" style="transition-delay: 0s; background-color: #00adef">
-                                <span class="har_news_img">
-                                    <i class="fa fa-vimeo fa-3x" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                        </a>
-                    </div> 
-                    <div class="col-md-2 col-sm-2 col-xs-2">
-                        <a href="https://www.instagram.com/willy_flechas/" target="_blank">
-                            <div class="har_news_block text-center" style="transition-delay: 0s; background-color: #ED4956">
-                                <span class="har_news_img">
-                                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2">
-                        <a href="https://www.facebook.com/djwillyflechas/" target="_blank">
-                            <div class="har_news_block text-center" style="transition-delay: 0s; background-color: #4267b2">
-                                <span class="har_news_img">
-                                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                        </a>
-                    </div> 
-                    <div class="col-md-2 col-sm-2 col-xs-2">
-                        <a href="https://twitter.com/willyflechas/" target="_blank">
-                            <div class="har_news_block text-center" style="transition-delay: 0s; background-color: #1da1f2">
-                                <span class="har_news_img">
-                                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                        </a>
-                    </div> 
-                    <div class="col-md-2 col-sm-2 col-xs-2">
-                        <a href="https://www.mixcloud.com/willyflechas/" target="_blank">
-                            <div class="har_news_block text-center" style="transition-delay: 0s; background-color: #34495e">
-                                <span class="har_news_img">
-                                    <i class="fa fa-mixcloud fa-3x" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                        </a>
-                    </div> 
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end REDES SOCIALES -->
+		</section>
+		<!-- REDES SOCIALES -->
+		<section class="har_section har_image_bck har_wht_txt" id="redes-sociales" data-color="#292929" style="background-color: rgb(41, 41, 41);">
+			<div class="container text-center">
+				<h2>Redes Sociales</h2>
+				<div class="har_icon_boxes row text-left har_team_slider_bw">
+					<div class="redes-sociales" data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
+						<div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1">
+							<a href="https://www.facebook.com/djwillyflechas/" target="_blank">
+								<div class="har_news_block text-center" style="transition-delay: 0s; background-color: #4267b2">
+									<span class="har_news_img">
+										<i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+									</span>
+								</div>
+							</a>
+						</div> 
+						<div class="col-md-2 col-sm-2 col-xs-2">
+							<a href="https://www.instagram.com/willy_flechas/" target="_blank">
+								<div class="har_news_block text-center" style="transition-delay: 0s; background-color: #ED4956">
+									<span class="har_news_img">
+										<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+									</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-2">
+							<a href="https://twitter.com/willyflechas/" target="_blank">
+								<div class="har_news_block text-center" style="transition-delay: 0s; background-color: #1da1f2">
+									<span class="har_news_img">
+										<i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+									</span>
+								</div>
+							</a>
+						</div> 
+						<div class="col-md-2 col-sm-2 col-xs-2">
+							<a href="https://vimeo.com/user2512212/" target="_blank">
+								<div class="har_news_block text-center" style="transition-delay: 0s; background-color: #00adef">
+									<span class="har_news_img">
+										<i class="fa fa-vimeo fa-3x" aria-hidden="true"></i>
+									</span>
+								</div>
+							</a>
+						</div> 
+						<div class="col-md-2 col-sm-2 col-xs-2">
+							<a href="https://www.mixcloud.com/willyflechas/" target="_blank">
+								<div class="har_news_block text-center" style="transition-delay: 0s; background-color: #34495e">
+									<span class="har_news_img">
+										<i class="fa fa-mixcloud fa-3x" aria-hidden="true"></i>
+									</span>
+								</div>
+							</a>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end REDES SOCIALES -->
 
-    @include('layouts.contacto')
-    @include('layouts.footer')
-</div>
-<!-- Page End -->
-<!-- JQuery -->
-<script src="js/jquery-1.12.3.min.js"></script> 
-<!-- Library JS -->
-<script src="js/jquery.firefly-0.2.min.js"></script> 
-<script src="js/harmony_library.js"></script> 
-<script src="js/jquery.mb.YTPlayer.min.js"></script> 
-<!-- Theme JS -->
-<script src="js/harmony_script.js"></script>
-@include("layouts.mute")
+		@include('layouts.contacto')
+		@include('layouts.footer')
+	</div>
+	<!-- Page End -->
+	<!-- JQuery -->
+	<script src="js/jquery-1.12.3.min.js"></script> 
+	<!-- Library JS -->
+	<script src="js/jquery.firefly-0.2.min.js"></script> 
+	<script src="js/harmony_library.js"></script> 
+	<script src="js/jquery.mb.YTPlayer.min.js"></script> 
+	<!-- Theme JS -->
+	<script src="js/harmony_script.js"></script>
+	@include("layouts.mute")
 </body>
 </html>

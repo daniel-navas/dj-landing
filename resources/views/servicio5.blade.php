@@ -14,336 +14,191 @@ use App\Servicios;
 
 <head>
 
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Willy Flechas DJ</title>
+	<title>Willy Flechas DJ</title>
 
-    <!-- Library CSS -->
+	<!-- Library CSS -->
 
-    <link href="/css/harmony_library.css" rel="stylesheet">
-    <link href="/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+	<link href="/css/harmony_library.css" rel="stylesheet">
+	<link href="/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
 
+	<!-- Icons CSS -->
 
-    <!-- Icons CSS -->
+	<link href="/fonts/themify-icons.css" rel="stylesheet">
 
-    <link href="/fonts/themify-icons.css" rel="stylesheet">
+	<!-- Theme CSS -->
 
-    <!-- Theme CSS -->
+	<link href="/css/harmony_style.css" rel="stylesheet">
 
-    <link href="/css/harmony_style.css" rel="stylesheet">
+	<!-- Google Fonts -->
 
-    <!-- Google Fonts -->
-
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body class="har_middle_titles">
 
-    <!-- Preloader -->
+	<!-- Preloader -->
 
-    <div class="har_preloader">
+	<div class="har_preloader">
 
-        <span class="har_logo_eq">
+		<span class="har_logo_eq">
 
-            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
 
-        </span>
+		</span>
 
-    </div>
+	</div>
 
-    <!-- Preloader End -->
+	<!-- Preloader End -->
 
+	<!-- Header -->
 
+	<header> 
 
-  
+		<nav class="har_light_nav har_transp_nav">
 
+			<div class="container">
 
+				<!-- Logo -->
 
+				<a href="/" class="har_logo" style="margin-left: 0px!important;"><img src="/img/logo.png" alt="" style="max-height: 35px;float: left;">
+					<!-- <div style="float: left;"><span style="font-family:'Nexa'; text-transform: capitalize; font-weight: 200; font-size: 19px"><strong>Willy</strong>Flechas<br><nr style="font-size: 8px; font-weight: light">EVENTOS Y ESPECTACULOS</nr></span></div> -->
+				</a>
 
-   <!-- Header -->
+				<!-- Logo End-->
 
-   <header>       
+				<div class="har_top_menu_mobile_link">
 
+					<i class="ti ti-menu"></i>
 
+				</div>
+				<!-- Top Menu -->
+				<div class="har_top_menu_cont">
+					<ul class="har_top_menu">
+						<li class="har_parent"><a href="/#servicios">Nuestros Servicios</a>
+						</li>
+						<li class="har_parent"><a href="/#noticias">Noticias</a>
+						</li>
+						<li class="har_parent"><a href="/#next_event">Mixcloud</a>
+						</li>
+						<li class="har_parent"><a href="/#canciones">Canciones</a>
+						</li> 
+						<li class="har_parent"><a href="/#calendario">Calendario</a>
+						</li>
+						<li class="har_parent"><a href="/#galeria">Galeria</a>
+						</li>
+						<li class="har_parent"><a href="/#instagram">Redes</a>
+						</li> 
+						<li class="har_parent"><a href="/#contacto">Contáctame</a>
+						</li> 
+					</ul>
+				</div>
+				<!-- Top Menu End -->
+			</div>
+			<!-- container end -->
+		</nav>
+	</header>
+	<!-- section end -->
 
-    <nav class="har_light_nav har_transp_nav">
+	<section class="har_section har_image_bck" id="galeria">
 
-        <div class="container">
+		<div class="container-fluid text-center">
 
+			<h2 style="font-family:'Montserrat', sans-serif; margin-top: 155px">WF Factory Case</h2>
 
+			<p style="font-size: 16px; margin-top: 30px">Partiendo de la necesidad de fabricar los racks para nuestra propia empresa y de la solicitud de algunos colegas del medio iniciamos el desarrollo y fabricación de racks y cases bajo pedido de acuerdo a las necesidades de nuestros clientes.
+				<br>
+				<br>
+				<a href="#contacto"><button type="link" href="#contacto">COTIZACION</button></a>
+			</p>
 
-            <!-- Logo -->
+			<!-- grid -->
 
+			<div class="har_portfolio grid">
 
-            <a href="/" class="har_logo" style="margin-left: 0px!important;"><img src="/img/logosintext.png" alt="" style="max-height: 35px;float: left;">
-                <img class="texto-logo" src="/img/texto-blanco.png" style="max-height: 34px" alt="">
-                <!-- <div style="float: left;"><span style="font-family:'Nexa'; text-transform: capitalize; font-weight: 200; font-size: 19px"><strong>Willy</strong>Flechas<br><nr style="font-size: 8px; font-weight: light">EVENTOS Y ESPECTACULOS</nr></span></div> -->
-            </a>
+				<!-- item -->
 
+				<div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
 
-            <!-- Logo End-->
+					<div class="har_portfolio_item_cont">
 
+						<img src="/img/servicios/5/5-1.jpg" alt="">
 
-            <div class="har_top_menu_mobile_link">
+						<span class="har_port_titles">
 
-                <i class="ti ti-menu"></i>
+							<span class="har_port_icons">
 
-            </div>
-            <!-- Top Menu -->
-            <div class="har_top_menu_cont">
-                <ul class="har_top_menu">
-                    <li class="har_parent"><a href="/#servicios">Nuestros Servicios</a>
-                    </li>
-                    <li class="har_parent"><a href="/#noticias">Noticias</a>
-                    </li>
-                    <li class="har_parent"><a href="/#next_event">Mixcloud</a>
-                    </li>
-                    <li class="har_parent"><a href="/#canciones">Canciones</a>
-                    </li> 
-                    <li class="har_parent"><a href="/#calendario">Calendario</a>
-                    </li>
-                    <li class="har_parent"><a href="/#galeria">Galeria</a>
-                    </li>
-                    <li class="har_parent"><a href="/#instagram">Redes</a>
-                    </li> 
-                    <li class="har_parent"><a href="/#contacto">Contáctame</a>
-                    </li>                
-                </ul>
-            </div>
-            <!-- Top Menu End -->
-        </div>
-        <!-- container end -->
-    </nav>
-</header>
-    <!-- section end -->
+								<a href="/img/servicios/5/5-1.jpg" class="lightbox"><i class="ti ti-search"></i></a>
 
-    <section class="har_section har_image_bck" id="galeria">
+							</span>
 
-        <div class="container-fluid text-center">
+						</span>
 
+					</div>
 
+				</div>
 
-            <h2 style="font-family:'Montserrat', sans-serif; margin-top: 155px">WF Factory Case</h2>
+				<!-- item -->
 
+				<div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase2')}}">
 
-            <p style="font-size: 16px; margin-top: 30px">Partiendo de la necesidad de fabricar los racks para nuestra propia empresa y de la solicitud de algunos colegas del medio iniciamos el desarrollo y fabricación de racks y cases bajo pedido de acuerdo a las necesidades de nuestros clientes.
- <br>
-                <br>
-                <a href="#contacto"><button type="link" href="#contacto">COTIZACION</button></a>
-</p>
+					<div class="har_portfolio_item_cont">
 
-            <!-- grid -->
+						<img src="/img/servicios/5/5-2.jpg" alt="">
 
-            <div class="har_portfolio grid">
+						<span class="har_port_titles">
 
+							<span class="har_port_icons">
 
+								<a href="/img/servicios/5/5-2.jpg" class="lightbox"><i class="ti ti-search"></i></a>
 
-                <!-- item -->
+							</span>
 
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
+						</span>
 
-                    <div class="har_portfolio_item_cont">
+					</div>
 
-                        <img src="{{Galeria::valor('foto1')}}" alt="">
+				</div>
 
-                        <span class="har_port_titles">
+				<!-- item -->
 
-                            <span class="har_port_title">{{Galeria::valor('Title1')}}</span>
+				<div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
 
-                            
+					<div class="har_portfolio_item_cont">
 
-                            <span class="har_port_icons">
+						<img src="/img/servicios/5/5-3.jpg" alt="">
 
-                                <a href="#"><i class="ti ti-link"></i></a>
+						<span class="har_port_titles">
 
-                                <a href="{{Galeria::valor('FotoGrande1')}}" class="lightbox"><i class="ti ti-search"></i></a>
+							<span class="har_port_icons">
 
-                            </span>
+								<a href="/img/servicios/5/5-3.jpg" class="lightbox"><i class="ti ti-search"></i></a>
 
-                        </span>
+							</span>
 
-                    </div>
+						</span>
 
-                </div>
+					</div>
 
+				</div>
 
+			</div>
 
-                <!-- item -->
+			<!-- grid end -->
 
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase2')}}">
+		</div>
 
-                    <div class="har_portfolio_item_cont">
+		<!-- container end -->
 
-                        <img src="{{Galeria::valor('foto2')}}" alt="">
-
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title2')}}</span>
-
-                            
-
-                            <span class="har_port_icons">
-
-
-                                <a href="{{Galeria::valor('FotoGrande2')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- item -->
-
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
-
-                    <div class="har_portfolio_item_cont">
-
-                        <img src="{{Galeria::valor('foto1')}}" alt="">
-
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title3')}}</span>
-
-                            <span class="har_port_subtitle">{{Galeria::valor('Subtitle3')}}</span>
-
-                            <span class="har_port_icons">
-
-                            
-
-                                <a href="{{Galeria::valor('FotoGrande3')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- item -->
-
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase4')}}">
-
-                    <div class="har_portfolio_item_cont">
-
-                        <img src="{{Galeria::valor('foto2')}}" alt="">
-
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title4')}}</span>
-
-                            
-
-                            <span class="har_port_icons">
-
-                                
-
-                                <a href="{{Galeria::valor('FotoGrande4')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-
-
-
-
-                <!-- item -->
-
-                <div class="col-sm-4 har_portfolio_item grid-item event {{Galeria::valor('clase1')}}">
-
-                    <div class="har_portfolio_item_cont">
-
-                        <img src="{{Galeria::valor('foto2')}}" alt="">
-
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title5')}}</span>
-
-                            
-
-                            <span class="har_port_icons">
-
-                                
-
-                                <a href="{{Galeria::valor('FotoGrande5')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- item -->
-
-                <div class="col-sm-4 har_portfolio_item grid-item {{Galeria::valor('clase1')}}">
-
-                    <div class="har_portfolio_item_cont">
-
-                        <img src="{{Galeria::valor('foto1')}}" alt="">
-
-                        <span class="har_port_titles">
-
-                            <span class="har_port_title">{{Galeria::valor('Title6')}}</span>
-
-                            
-
-                            <span class="har_port_icons">
-
-                                
-
-                                <a href="{{Galeria::valor('FotoGrande6')}}" class="lightbox"><i class="ti ti-search"></i></a>
-
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-
-
-            </div>
-
-            
-            <!-- grid end -->
-
-
-
-        </div>
-
-        <!-- container end -->
-
-
-
-    </section>
-@include('layouts.contacto')
-@include('layouts.footer')
+	</section>
+	@include('layouts.contacto')
+	@include('layouts.footer')
 </div>
 <!-- Page End -->
 
